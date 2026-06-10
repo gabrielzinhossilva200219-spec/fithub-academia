@@ -37,6 +37,19 @@ void cadastrarPersonal() {
 
 void listarFuncionarios() {
 
+    if(totalFuncionarios == 0) {
+        printf("Nenhum funcionario cadastrado.\n");
+        return;
+    }
+
+    printf("\n=== Funcionarios Cadastrados ===\n");
+
+    for(int i = 0; i < totalFuncionarios; i++) {
+        printf("%d - %s (%s)\n",
+               i + 1,
+               funcionarios[i].nome,
+               funcionarios[i].cargo);
+    }
 }
 
 void menuGerente() {

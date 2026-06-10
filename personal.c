@@ -37,3 +37,21 @@ void cadastrarTreino() {
 
     printf("Treino cadastrado com sucesso!\n");
 }
+
+void listarTreinos() {
+    if (totalTreinos == 0) {
+        printf("Nenhum treino cadastrado.\n");
+        return;
+    }
+
+    printf("\n===== LISTA DE TREINOS =====\n");
+
+    for (int i = 0; i < totalTreinos; i++) {
+        printf("\nTreino %d\n", i + 1);
+        printf("Aluno: %s\n", treinos[i].nome_aluno);
+        printf("Exercicio: %s\n", treinos[i].exercicio);
+        printf("Peso: %d\n", treinos[i].peso);
+        printf("Repeticoes: %d\n", treinos[i].repeticoes);
+        printf("Series: %d\n", treinos[i].series);
+    }
+}

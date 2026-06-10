@@ -7,10 +7,16 @@ int totalFuncionarios = 0;
 
 void cadastrarRecepcionista() {
 
-    if(totalFuncionarios >= MAX_FUNCIONARIOS) {
-        printf("Limite de funcionarios atingido!\n");
-        return;
-    }
+if(totalFuncionarios >= MAX_FUNCIONARIOS) {
+
+    printf("\n=================================\n");
+    printf("ERRO: Limite maximo de %d funcionarios atingido!\n",
+           MAX_FUNCIONARIOS);
+    printf("Nao e possivel realizar novos cadastros.\n");
+    printf("=================================\n");
+
+    return;
+}
 
     strcpy(funcionarios[totalFuncionarios].nome, "Recepcionista");
     strcpy(funcionarios[totalFuncionarios].cargo, "Recepcionista");
@@ -23,7 +29,11 @@ void cadastrarRecepcionista() {
 void cadastrarPersonal() {
 
     if(totalFuncionarios >= MAX_FUNCIONARIOS) {
-        printf("Limite de funcionarios atingido!\n");
+        printf("\n=================================\n");
+        printf("ERRO: Limite maximo de %d funcionarios atingido!\n",
+               MAX_FUNCIONARIOS);
+        printf("Nao e possivel realizar novos cadastros.\n");
+        printf("=================================\n");
         return;
     }
 
@@ -87,7 +97,7 @@ void menuGerente() {
                 break;
 
             default:
-                printf("Opcao invalida!\n");
+                printf("\nOpcao invalida! Escolha uma opcao entre 0 e 3.\n");
         }
 
     } while(opcao != 0);

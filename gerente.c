@@ -22,6 +22,17 @@ void cadastrarRecepcionista() {
 
 void cadastrarPersonal() {
 
+    if(totalFuncionarios >= MAX_FUNCIONARIOS) {
+        printf("Limite de funcionarios atingido!\n");
+        return;
+    }
+
+    strcpy(funcionarios[totalFuncionarios].nome, "Personal");
+    strcpy(funcionarios[totalFuncionarios].cargo, "Personal Trainer");
+
+    totalFuncionarios++;
+
+    printf("Personal Trainer cadastrado com sucesso!\n");
 }
 
 void listarFuncionarios() {

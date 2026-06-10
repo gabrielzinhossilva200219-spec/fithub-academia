@@ -18,20 +18,45 @@ void cadastrarTreino() {
         return;
     }
 
+    char nome[100];
+    char exercicio[100];
+    int peso, repeticoes, series;
+
     printf("Nome do aluno: ");
-    scanf(" %99[^\n]", treinos[totalTreinos].nome_aluno);
+    scanf(" %99[^\n]", nome);
 
     printf("Exercicio: ");
-    scanf(" %99[^\n]", treinos[totalTreinos].exercicio);
+    scanf(" %99[^\n]", exercicio);
 
     printf("Peso: ");
-    scanf("%d", &treinos[totalTreinos].peso);
+    scanf("%d", &peso);
 
     printf("Repeticoes: ");
-    scanf("%d", &treinos[totalTreinos].repeticoes);
+    scanf("%d", &repeticoes);
 
     printf("Series: ");
-    scanf("%d", &treinos[totalTreinos].series);
+    scanf("%d", &series);
+
+    if (strlen(nome) == 0) {
+        printf("Nome nao pode ser vazio!\n");
+        return;
+    }
+
+    if (peso <= 0) {
+        printf("Peso invalido!\n");
+        return;
+    }
+
+    if (repeticoes <= 0 || series <= 0) {
+        printf("Repeticoes e series devem ser maiores que zero!\n");
+        return;
+    }
+
+    strcpy(treinos[totalTreinos].nome_aluno, nome);
+    strcpy(treinos[totalTreinos].exercicio, exercicio);
+    treinos[totalTreinos].peso = peso;
+    treinos[totalTreinos].repeticoes = repeticoes;
+    treinos[totalTreinos].series = series;
 
     totalTreinos++;
 
@@ -86,3 +111,4 @@ void menuPersonal() {
 
     } while (opcao != 0);
 }
+

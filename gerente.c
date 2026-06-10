@@ -54,4 +54,41 @@ void listarFuncionarios() {
 
 void menuGerente() {
 
+    int opcao;
+
+    do {
+
+        printf("\n=================================\n");
+        printf("       MENU DO GERENTE\n");
+        printf("=================================\n");
+        printf("1 - Cadastrar Recepcionista\n");
+        printf("2 - Cadastrar Personal Trainer\n");
+        printf("3 - Listar Funcionarios\n");
+        printf("0 - Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch(opcao) {
+
+            case 1:
+                cadastrarRecepcionista();
+                break;
+
+            case 2:
+                cadastrarPersonal();
+                break;
+
+            case 3:
+                listarFuncionarios();
+                break;
+
+            case 0:
+                printf("Saindo...\n");
+                break;
+
+            default:
+                printf("Opcao invalida!\n");
+        }
+
+    } while(opcao != 0);
 }

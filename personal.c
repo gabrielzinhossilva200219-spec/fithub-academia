@@ -69,9 +69,12 @@ void listarTreinos() {
         return;
     }
 
+    printf("\n=================================\n");
     printf("\n===== LISTA DE TREINOS =====\n");
+    printf("=================================\n");
 
     for (int i = 0; i < totalTreinos; i++) {
+        printf("\n---------------------------------\n");
         printf("\nTreino %d\n", i + 1);
         printf("Aluno: %s\n", treinos[i].nome_aluno);
         printf("Exercicio: %s\n", treinos[i].exercicio);
@@ -85,7 +88,7 @@ void menuPersonal() {
     int opcao;
 
     do {
-        printf("\n===== MENU PERSONAL TRAINER =====\n");
+        printf("\n=== SISTEMA PERSONAL TRAINER ===\n");
         printf("1 - Cadastrar treino\n");
         printf("2 - Listar treinos\n");
         printf("0 - Sair\n");

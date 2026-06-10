@@ -55,3 +55,34 @@ void listarTreinos() {
         printf("Series: %d\n", treinos[i].series);
     }
 }
+
+void menuPersonal() {
+    int opcao;
+
+    do {
+        printf("\n===== MENU PERSONAL TRAINER =====\n");
+        printf("1 - Cadastrar treino\n");
+        printf("2 - Listar treinos\n");
+        printf("0 - Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                cadastrarTreino();
+                break;
+
+            case 2:
+                listarTreinos();
+                break;
+
+            case 0:
+                printf("Saindo...\n");
+                break;
+
+            default:
+                printf("Opcao invalida!\n");
+        }
+
+    } while (opcao != 0);
+}

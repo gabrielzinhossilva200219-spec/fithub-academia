@@ -60,3 +60,18 @@ if(!validarData(alunos[totalAlunos].dataNascimento)) {
 
     return;
 }
+int validarEmail(char email[]);
+int validarEmail(char email[]) {
+
+    return strstr(email,"@") &&
+           strstr(email,".com");
+}
+
+No cadastro:
+
+if(!validarEmail(alunos[totalAlunos].email)) {
+
+    printf("Email invalido!\n");
+
+    return;
+}

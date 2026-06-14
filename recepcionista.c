@@ -104,3 +104,23 @@ if(!validarLaudo(alunos[totalAlunos].laudo)) {
 
     return;
 }
+nt cpfExiste(char cpf[]);
+int cpfExiste(char cpf[]) {
+
+    for(int i = 0; i < totalAlunos; i++) {
+
+        if(strcmp(alunos[i].cpf, cpf) == 0)
+            return 1;
+    }
+
+    return 0;
+}
+
+No cadastro:
+
+if(cpfExiste(alunos[totalAlunos].cpf)) {
+
+    printf("CPF ja cadastrado!\n");
+
+    return;
+}

@@ -33,3 +33,30 @@ void cadastrarAluno() {
 
     printf("Aluno cadastrado!\n");
 }
+
+int validarData(char data[]);
+int validarData(char data[]) {
+
+    int dia;
+    int mes;
+    int ano;
+
+    sscanf(data,"%d/%d/%d",&dia,&mes,&ano);
+
+    if(dia < 1 || dia > 31)
+        return 0;
+
+    if(mes < 1 || mes > 12)
+        return 0;
+
+    return 1;
+}
+
+No cadastro:
+
+if(!validarData(alunos[totalAlunos].dataNascimento)) {
+
+    printf("Data invalida!\n");
+
+    return;
+}

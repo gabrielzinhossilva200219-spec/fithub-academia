@@ -47,3 +47,35 @@ if(!validarCPF(alunos[totalAlunos].cpf)) {
 
     return;
 }
+
+int validarNome(char nome[]);
+int validarCPF(char cpf[]);
+recepcionista.c
+
+Adicionar:
+
+int validarNome(char nome[]) {
+
+    return strlen(nome) > 0;
+}
+
+int validarCPF(char cpf[]) {
+
+    return strlen(cpf) == 11;
+}
+
+Dentro de cadastrarAluno():
+
+if(!validarNome(alunos[totalAlunos].nome)) {
+
+    printf("Nome invalido!\n");
+
+    return;
+}
+
+if(!validarCPF(alunos[totalAlunos].cpf)) {
+
+    printf("CPF invalido!\n");
+
+    return;
+}

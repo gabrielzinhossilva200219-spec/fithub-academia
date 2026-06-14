@@ -52,8 +52,6 @@ int validarData(char data[]) {
     return 1;
 }
 
-No cadastro:
-
 if(!validarData(alunos[totalAlunos].dataNascimento)) {
 
     printf("Data invalida!\n");
@@ -67,15 +65,12 @@ int validarEmail(char email[]) {
            strstr(email,".com");
 }
 
-No cadastro:
-
 if(!validarEmail(alunos[totalAlunos].email)) {
 
     printf("Email invalido!\n");
 
     return;
 }
-Adicionar:
 
 int validarTelefone(char telefone[]);
 int validarLaudo(char laudo[]);
@@ -88,8 +83,6 @@ int validarLaudo(char laudo[]) {
 
     return strlen(laudo) > 0;
 }
-
-No cadastro:
 
 if(!validarTelefone(alunos[totalAlunos].telefone)) {
 
@@ -116,11 +109,33 @@ int cpfExiste(char cpf[]) {
     return 0;
 }
 
-No cadastro:
-
 if(cpfExiste(alunos[totalAlunos].cpf)) {
 
     printf("CPF ja cadastrado!\n");
 
     return;
+}
+
+void menuRecepcionista();
+void menuRecepcionista() {
+
+    int opcao;
+
+    do {
+
+        printf("\n===== RECEPCIONISTA =====\n");
+
+        printf("1 - Cadastrar aluno\n");
+        printf("0 - Sair\n");
+
+        scanf("%d",&opcao);
+
+        switch(opcao) {
+
+            case 1:
+                cadastrarAluno();
+                break;
+        }
+
+    } while(opcao != 0);
 }

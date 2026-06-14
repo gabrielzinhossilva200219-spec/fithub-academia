@@ -75,3 +75,32 @@ if(!validarEmail(alunos[totalAlunos].email)) {
 
     return;
 }
+Adicionar:
+
+int validarTelefone(char telefone[]);
+int validarLaudo(char laudo[]);
+int validarTelefone(char telefone[]) {
+
+    return strlen(telefone) == 11;
+}
+
+int validarLaudo(char laudo[]) {
+
+    return strlen(laudo) > 0;
+}
+
+No cadastro:
+
+if(!validarTelefone(alunos[totalAlunos].telefone)) {
+
+    printf("Telefone invalido!\n");
+
+    return;
+}
+
+if(!validarLaudo(alunos[totalAlunos].laudo)) {
+
+    printf("Laudo invalido!\n");
+
+    return;
+}

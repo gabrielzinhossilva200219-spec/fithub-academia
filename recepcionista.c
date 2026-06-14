@@ -139,3 +139,10 @@ void menuRecepcionista() {
 
     } while(opcao != 0);
 }
+
+if(totalAlunos >= MAX_ALUNOS) {
+
+    printf("Limite de alunos atingido!\n");
+
+    return;
+}

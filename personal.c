@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-typedef struct {
-    char nome_aluno[100];
-    char exercicio[100];
-    int peso;
-    int repeticoes;
-    int series;
-} Treino;
+#include "personal.h"
 
 Treino treinos[100];
 int totalTreinos = 0;
@@ -18,12 +11,12 @@ void cadastrarTreino() {
         return;
     }
 
-    char nome[100];
+    char cpf[12];
     char exercicio[100];
     int peso, repeticoes, series;
 
-    printf("Nome do aluno: ");
-    scanf(" %99[^\n]", nome);
+    printf("CPF do aluno: ");
+    scanf(" %11s", cpf);
 
     printf("Exercicio: ");
     scanf(" %99[^\n]", exercicio);
@@ -37,8 +30,8 @@ void cadastrarTreino() {
     printf("Series: ");
     scanf("%d", &series);
 
-    if (strlen(nome) == 0) {
-        printf("Nome nao pode ser vazio!\n");
+    if (strlen(cpf) == 0) {
+        printf("CPF nao pode ser vazio!\n");
         return;
     }
 
@@ -52,7 +45,7 @@ void cadastrarTreino() {
         return;
     }
 
-    strcpy(treinos[totalTreinos].nome_aluno, nome);
+    strcpy(treinos[totalTreinos].cpf_aluno, cpf);
     strcpy(treinos[totalTreinos].exercicio, exercicio);
     treinos[totalTreinos].peso = peso;
     treinos[totalTreinos].repeticoes = repeticoes;
@@ -76,12 +69,20 @@ void listarTreinos() {
     for (int i = 0; i < totalTreinos; i++) {
         printf("\n---------------------------------\n");
         printf("\nTreino %d\n", i + 1);
-        printf("Aluno: %s\n", treinos[i].nome_aluno);
+        printf("CPF do aluno: %s\n", treinos[i].cpf_aluno);
         printf("Exercicio: %s\n", treinos[i].exercicio);
         printf("Peso: %d\n", treinos[i].peso);
         printf("Repeticoes: %d\n", treinos[i].repeticoes);
         printf("Series: %d\n", treinos[i].series);
     }
+}
+
+Treino* buscarTreinoPorCPF(char cpf[]) {
+    for (int i = 0; i < totalTreinos; i++) {
+        if (strcmp(treinos[i].cpf_aluno, cpf) == 0)
+            return &treinos[i];
+    }
+    return NULL;
 }
 
 void menuPersonal() {
@@ -114,4 +115,3 @@ void menuPersonal() {
 
     } while (opcao != 0);
 }
-

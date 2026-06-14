@@ -7,18 +7,25 @@ int totalFuncionarios = 0;
 
 void cadastrarRecepcionista() {
 
-if(totalFuncionarios >= MAX_FUNCIONARIOS) {
+    if(totalFuncionarios >= MAX_FUNCIONARIOS) {
 
-    printf("\n=================================\n");
-    printf("ERRO: Limite maximo de %d funcionarios atingido!\n",
-           MAX_FUNCIONARIOS);
-    printf("Nao e possivel realizar novos cadastros.\n");
-    printf("=================================\n");
+        printf("\n=================================\n");
+        printf("ERRO: Limite maximo de %d funcionarios atingido!\n",
+               MAX_FUNCIONARIOS);
+        printf("Nao e possivel realizar novos cadastros.\n");
+        printf("=================================\n");
 
-    return;
-}
+        return;
+    }
 
-    strcpy(funcionarios[totalFuncionarios].nome, "Recepcionista");
+    printf("Nome da recepcionista: ");
+    scanf(" %99[^\n]", funcionarios[totalFuncionarios].nome);
+
+    if(strlen(funcionarios[totalFuncionarios].nome) == 0) {
+        printf("Nome invalido!\n");
+        return;
+    }
+
     strcpy(funcionarios[totalFuncionarios].cargo, "Recepcionista");
 
     totalFuncionarios++;
@@ -37,7 +44,14 @@ void cadastrarPersonal() {
         return;
     }
 
-    strcpy(funcionarios[totalFuncionarios].nome, "Personal");
+    printf("Nome do Personal Trainer: ");
+    scanf(" %99[^\n]", funcionarios[totalFuncionarios].nome);
+
+    if(strlen(funcionarios[totalFuncionarios].nome) == 0) {
+        printf("Nome invalido!\n");
+        return;
+    }
+
     strcpy(funcionarios[totalFuncionarios].cargo, "Personal Trainer");
 
     totalFuncionarios++;

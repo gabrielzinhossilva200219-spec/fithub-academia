@@ -67,6 +67,21 @@ MU_TEST(CT02_nome_vazio) {
     mu_check(validarNome("") == 0);
 }
 
+/** @brief CT03 - CPF com 11 digitos deve ser aceito. */
+MU_TEST(CT03_cpf_valido) {
+    mu_check(validarCPF("12345678900") == 1);
+}
+
+/** @brief CT04 - CPF vazio deve ser rejeitado. */
+MU_TEST(CT04_cpf_vazio) {
+    mu_check(validarCPF("") == 0);
+}
+
+/** @brief CT05 - CPF com menos de 11 digitos deve ser rejeitado. */
+MU_TEST(CT05_cpf_incompleto) {
+    mu_check(validarCPF("123") == 0);
+}
+
     totalAlunos = 0;
     totalTreinos = 0;
     memset(alunos, 0, sizeof(Aluno) * MAX_ALUNOS);

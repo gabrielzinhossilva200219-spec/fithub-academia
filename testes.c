@@ -82,6 +82,16 @@ MU_TEST(CT05_cpf_incompleto) {
     mu_check(validarCPF("123") == 0);
 }
 
+/** @brief CT06 - Data no formato valido deve ser aceita. */
+MU_TEST(CT06_data_valida) {
+    mu_check(validarData("10/10/2000") == 1);
+}
+
+/** @brief CT07 - Data com dia e mes invalidos deve ser rejeitada. */
+MU_TEST(CT07_data_invalida) {
+    mu_check(validarData("99/99/9999") == 0);
+}
+
     totalAlunos = 0;
     totalTreinos = 0;
     memset(alunos, 0, sizeof(Aluno) * MAX_ALUNOS);

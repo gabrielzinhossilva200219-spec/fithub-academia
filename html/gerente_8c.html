@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FitHub Academia: Referência do Arquivo C:/Users/kenne/fithub-academia/gerente.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FitHub Academia<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">FitHub Academia é um sistema para gerenciamento de uma academia pública em Cruzeiro-SP. Realiza cadastro de alunos, rotinas de treino e tarefas administrativas de forma organizada e eficiente.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('gerente_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo gerente.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementacao das funcoes do modulo gerente.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="gerente_8h_source.html">gerente.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ab601c16c53e07f32f385e254d88a4634" id="r_ab601c16c53e07f32f385e254d88a4634"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab601c16c53e07f32f385e254d88a4634">cadastrarRecepcionista</a> ()</td></tr>
+<tr class="memdesc:ab601c16c53e07f32f385e254d88a4634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cadastra uma nova recepcionista.  <br /></td></tr>
+<tr class="memitem:a70836b0cb90f779da578bd1bdc50d6ce" id="r_a70836b0cb90f779da578bd1bdc50d6ce"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a70836b0cb90f779da578bd1bdc50d6ce">cadastrarPersonal</a> ()</td></tr>
+<tr class="memdesc:a70836b0cb90f779da578bd1bdc50d6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cadastra um novo personal trainer.  <br /></td></tr>
+<tr class="memitem:ac5d35ced416e64ea9d6889f8e23cd110" id="r_ac5d35ced416e64ea9d6889f8e23cd110"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac5d35ced416e64ea9d6889f8e23cd110">listarFuncionarios</a> ()</td></tr>
+<tr class="memdesc:ac5d35ced416e64ea9d6889f8e23cd110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista todos os funcionarios cadastrados.  <br /></td></tr>
+<tr class="memitem:a03f7a025bbe6a7cd456898f7a1010750" id="r_a03f7a025bbe6a7cd456898f7a1010750"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a03f7a025bbe6a7cd456898f7a1010750">menuGerente</a> ()</td></tr>
+<tr class="memdesc:a03f7a025bbe6a7cd456898f7a1010750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe o menu do gerente e processa as opcoes escolhidas.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a4b216f6345e92f2a51e13ede844c00d1" id="r_a4b216f6345e92f2a51e13ede844c00d1"><td class="memItemLeft"><a class="el" href="struct_funcionario.html">Funcionario</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a> [<a class="el" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a>]</td></tr>
+<tr class="memitem:ab3909b3f23c4992324e45b5a7c0f83fb" id="r_ab3909b3f23c4992324e45b5a7c0f83fb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 0</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementacao das funcoes do modulo gerente. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="a70836b0cb90f779da578bd1bdc50d6ce" name="a70836b0cb90f779da578bd1bdc50d6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70836b0cb90f779da578bd1bdc50d6ce">&#9670;&#160;</a></span>cadastrarPersonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cadastrarPersonal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cadastra um novo personal trainer. </p>
+<p>Cadastra um novo personal trainer solicitando o nome ao usuario.</p>
+<p>Solicita o nome ao usuario e define o cargo como Personal Trainer. Verifica o limite maximo de funcionarios antes de cadastrar.</p>
+<p>Cadastra um novo personal trainer. </p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> &gt;= <a class="code hl_define" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a>)</div>
+<div class="line"><span class="lineno">   56</span>    {</div>
+<div class="line"><span class="lineno">   57</span>        printf(<span class="stringliteral">&quot;\n=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   58</span>        printf(</div>
+<div class="line"><span class="lineno">   59</span>            <span class="stringliteral">&quot;ERRO: Limite maximo de %d funcionarios atingido!\n&quot;</span>,</div>
+<div class="line"><span class="lineno">   60</span>            <a class="code hl_define" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a></div>
+<div class="line"><span class="lineno">   61</span>        );</div>
+<div class="line"><span class="lineno">   62</span>        printf(<span class="stringliteral">&quot;Nao e possivel realizar novos cadastros.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   63</span>        printf(<span class="stringliteral">&quot;=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    printf(<span class="stringliteral">&quot;Nome do Personal Trainer: &quot;</span>);</div>
+<div class="line"><span class="lineno">   68</span>    scanf(<span class="stringliteral">&quot; %99[^\n]&quot;</span>, <a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>].nome);</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (strlen(<a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>].nome) == 0)</div>
+<div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>        printf(<span class="stringliteral">&quot;Nome invalido!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    strcpy(<a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>].cargo, <span class="stringliteral">&quot;Personal Trainer&quot;</span>);</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>++;</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    printf(<span class="stringliteral">&quot;Personal Trainer cadastrado com sucesso!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+<div class="ttc" id="agerente_8c_html_a4b216f6345e92f2a51e13ede844c00d1"><div class="ttname"><a href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a></div><div class="ttdeci">Funcionario funcionarios[MAX_FUNCIONARIOS]</div><div class="ttdef"><b>Definição</b> gerente.c:11</div></div>
+<div class="ttc" id="agerente_8c_html_ab3909b3f23c4992324e45b5a7c0f83fb"><div class="ttname"><a href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a></div><div class="ttdeci">int totalFuncionarios</div><div class="ttdef"><b>Definição</b> gerente.c:12</div></div>
+<div class="ttc" id="agerente_8h_html_ae56b7e6ebd3278dc39f4c20c2e123c91"><div class="ttname"><a href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a></div><div class="ttdeci">#define MAX_FUNCIONARIOS</div><div class="ttdef"><b>Definição</b> gerente.h:4</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab601c16c53e07f32f385e254d88a4634" name="ab601c16c53e07f32f385e254d88a4634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab601c16c53e07f32f385e254d88a4634">&#9670;&#160;</a></span>cadastrarRecepcionista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cadastrarRecepcionista </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cadastra uma nova recepcionista. </p>
+<p>Cadastra uma nova recepcionista solicitando o nome ao usuario.</p>
+<p>Solicita o nome ao usuario e define o cargo como Recepcionista. Verifica o limite maximo de funcionarios antes de cadastrar.</p>
+<p>Cadastra uma nova recepcionista. </p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> &gt;= <a class="code hl_define" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a>)</div>
+<div class="line"><span class="lineno">   22</span>    {</div>
+<div class="line"><span class="lineno">   23</span>        printf(<span class="stringliteral">&quot;\n=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   24</span>        printf(</div>
+<div class="line"><span class="lineno">   25</span>            <span class="stringliteral">&quot;ERRO: Limite maximo de %d funcionarios atingido!\n&quot;</span>,</div>
+<div class="line"><span class="lineno">   26</span>            <a class="code hl_define" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a></div>
+<div class="line"><span class="lineno">   27</span>        );</div>
+<div class="line"><span class="lineno">   28</span>        printf(<span class="stringliteral">&quot;Nao e possivel realizar novos cadastros.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   29</span>        printf(<span class="stringliteral">&quot;=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   31</span>    }</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    printf(<span class="stringliteral">&quot;Nome da recepcionista: &quot;</span>);</div>
+<div class="line"><span class="lineno">   34</span>    scanf(<span class="stringliteral">&quot; %99[^\n]&quot;</span>, <a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>].nome);</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (strlen(<a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>].nome) == 0)</div>
+<div class="line"><span class="lineno">   37</span>    {</div>
+<div class="line"><span class="lineno">   38</span>        printf(<span class="stringliteral">&quot;Nome invalido!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    strcpy(<a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>].cargo, <span class="stringliteral">&quot;Recepcionista&quot;</span>);</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>++;</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    printf(<span class="stringliteral">&quot;Recepcionista cadastrada com sucesso!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac5d35ced416e64ea9d6889f8e23cd110" name="ac5d35ced416e64ea9d6889f8e23cd110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d35ced416e64ea9d6889f8e23cd110">&#9670;&#160;</a></span>listarFuncionarios()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listarFuncionarios </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista todos os funcionarios cadastrados. </p>
+<p>Lista todos os funcionarios cadastrados no sistema.</p>
+<p>Exibe nome e cargo de cada funcionario. Caso nenhum tenha sido cadastrado, exibe mensagem informativa.</p>
+<p>Lista todos os funcionarios cadastrados. </p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> == 0)</div>
+<div class="line"><span class="lineno">   90</span>    {</div>
+<div class="line"><span class="lineno">   91</span>        printf(<span class="stringliteral">&quot;Nenhum funcionario cadastrado.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    printf(<span class="stringliteral">&quot;\n=== Funcionarios Cadastrados ===\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a>; i++)</div>
+<div class="line"><span class="lineno">   98</span>    {</div>
+<div class="line"><span class="lineno">   99</span>        printf(</div>
+<div class="line"><span class="lineno">  100</span>            <span class="stringliteral">&quot;%d - %s (%s)\n&quot;</span>,</div>
+<div class="line"><span class="lineno">  101</span>            i + 1,</div>
+<div class="line"><span class="lineno">  102</span>            <a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[i].nome,</div>
+<div class="line"><span class="lineno">  103</span>            <a class="code hl_variable" href="#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[i].cargo</div>
+<div class="line"><span class="lineno">  104</span>        );</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a03f7a025bbe6a7cd456898f7a1010750" name="a03f7a025bbe6a7cd456898f7a1010750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f7a025bbe6a7cd456898f7a1010750">&#9670;&#160;</a></span>menuGerente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void menuGerente </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exibe o menu do gerente e processa as opcoes escolhidas. </p>
+<p>Exibe e controla o menu do gerente.</p>
+<p>Loop continuo ate que o usuario escolha sair (opcao 0).</p>
+<p>Exibe o menu do gerente e processa as opcoes escolhidas. </p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordtype">int</span> opcao;</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">do</span></div>
+<div class="line"><span class="lineno">  117</span>    {</div>
+<div class="line"><span class="lineno">  118</span>        printf(<span class="stringliteral">&quot;\n=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span>        printf(<span class="stringliteral">&quot;       MENU DO GERENTE\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  120</span>        printf(<span class="stringliteral">&quot;=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>        printf(<span class="stringliteral">&quot;1 - Cadastrar Recepcionista\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  122</span>        printf(<span class="stringliteral">&quot;2 - Cadastrar Personal Trainer\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  123</span>        printf(<span class="stringliteral">&quot;3 - Listar Funcionarios\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  124</span>        printf(<span class="stringliteral">&quot;0 - Sair\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  125</span>        printf(<span class="stringliteral">&quot;Escolha uma opcao: &quot;</span>);</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>        scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;opcao);</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">switch</span> (opcao)</div>
+<div class="line"><span class="lineno">  130</span>        {</div>
+<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">  132</span>                <a class="code hl_function" href="#ab601c16c53e07f32f385e254d88a4634">cadastrarRecepcionista</a>();</div>
+<div class="line"><span class="lineno">  133</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  136</span>                <a class="code hl_function" href="#a70836b0cb90f779da578bd1bdc50d6ce">cadastrarPersonal</a>();</div>
+<div class="line"><span class="lineno">  137</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">  140</span>                <a class="code hl_function" href="#ac5d35ced416e64ea9d6889f8e23cd110">listarFuncionarios</a>();</div>
+<div class="line"><span class="lineno">  141</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>            <span class="keywordflow">case</span> 0:</div>
+<div class="line"><span class="lineno">  144</span>                printf(<span class="stringliteral">&quot;Saindo...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  145</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  148</span>                printf(</div>
+<div class="line"><span class="lineno">  149</span>                    <span class="stringliteral">&quot;\nOpcao invalida! Escolha uma opcao entre 0 e 3.\n&quot;</span></div>
+<div class="line"><span class="lineno">  150</span>                );</div>
+<div class="line"><span class="lineno">  151</span>        }</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    } <span class="keywordflow">while</span> (opcao != 0);</div>
+<div class="line"><span class="lineno">  154</span>}</div>
+<div class="ttc" id="agerente_8c_html_a70836b0cb90f779da578bd1bdc50d6ce"><div class="ttname"><a href="#a70836b0cb90f779da578bd1bdc50d6ce">cadastrarPersonal</a></div><div class="ttdeci">void cadastrarPersonal()</div><div class="ttdoc">Cadastra um novo personal trainer.</div><div class="ttdef"><b>Definição</b> gerente.c:53</div></div>
+<div class="ttc" id="agerente_8c_html_ab601c16c53e07f32f385e254d88a4634"><div class="ttname"><a href="#ab601c16c53e07f32f385e254d88a4634">cadastrarRecepcionista</a></div><div class="ttdeci">void cadastrarRecepcionista()</div><div class="ttdoc">Cadastra uma nova recepcionista.</div><div class="ttdef"><b>Definição</b> gerente.c:19</div></div>
+<div class="ttc" id="agerente_8c_html_ac5d35ced416e64ea9d6889f8e23cd110"><div class="ttname"><a href="#ac5d35ced416e64ea9d6889f8e23cd110">listarFuncionarios</a></div><div class="ttdeci">void listarFuncionarios()</div><div class="ttdoc">Lista todos os funcionarios cadastrados.</div><div class="ttdef"><b>Definição</b> gerente.c:87</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="a4b216f6345e92f2a51e13ede844c00d1" name="a4b216f6345e92f2a51e13ede844c00d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b216f6345e92f2a51e13ede844c00d1">&#9670;&#160;</a></span>funcionarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_funcionario.html">Funcionario</a> funcionarios[<a class="el" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3909b3f23c4992324e45b5a7c0f83fb" name="ab3909b3f23c4992324e45b5a7c0f83fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3909b3f23c4992324e45b5a7c0f83fb">&#9670;&#160;</a></span>totalFuncionarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int totalFuncionarios = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_61dac2bb30eaf8a10af339b83a06b3fd.html">fithub-academia</a></li><li class="navelem"><a href="gerente_8c.html">gerente.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

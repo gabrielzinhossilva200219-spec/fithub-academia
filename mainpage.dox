@@ -1,0 +1,12 @@
+/**
+ * @mainpage FitHub Academia - Documentação
+ *
+ * @section intro Introdução
+ * Sistema de gerenciamento de academia pública localizada em Cruzeiro-SP.
+ * Realiza cadastro de alunos, rotinas de treino e tarefas administrativas.
+ *
+ * @section modulos Módulos do Sistema
+ * - Recepcionista: cadastro e gestão de alunos
+ * - Personal Trainer: gerenciamento de treinos
+ * - Gerente: administração de funcionários
+ */

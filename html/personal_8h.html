@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FitHub Academia: Referência do Arquivo C:/Users/kenne/fithub-academia/personal.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FitHub Academia<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">FitHub Academia é um sistema para gerenciamento de uma academia pública em Cruzeiro-SP. Realiza cadastro de alunos, rotinas de treino e tarefas administrativas de forma organizada e eficiente.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('personal_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo personal.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="personal_8h_source.html">Ir para o código-fonte desse arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:Treino" id="r_Treino"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_treino.html">Treino</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estrutura que representa um treino associado a um aluno.  <a href="struct_treino.html#details">Mais...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a36a805a6cabc81c84e804fc4c2175428" id="r_a36a805a6cabc81c84e804fc4c2175428"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a36a805a6cabc81c84e804fc4c2175428">cadastrarTreino</a> ()</td></tr>
+<tr class="memdesc:a36a805a6cabc81c84e804fc4c2175428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cadastra um novo treino associado a um aluno pelo CPF.  <br /></td></tr>
+<tr class="memitem:a4ae2a188138ed542591a5d1f1e48afe4" id="r_a4ae2a188138ed542591a5d1f1e48afe4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4ae2a188138ed542591a5d1f1e48afe4">listarTreinos</a> ()</td></tr>
+<tr class="memdesc:a4ae2a188138ed542591a5d1f1e48afe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista todos os treinos cadastrados no sistema.  <br /></td></tr>
+<tr class="memitem:a11e1d4b59f39dc2a7971a29137617dd5" id="r_a11e1d4b59f39dc2a7971a29137617dd5"><td class="memItemLeft"><a class="el" href="struct_treino.html">Treino</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a11e1d4b59f39dc2a7971a29137617dd5">buscarTreinoPorCPF</a> (char cpf[])</td></tr>
+<tr class="memdesc:a11e1d4b59f39dc2a7971a29137617dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca um treino pelo CPF do aluno.  <br /></td></tr>
+<tr class="memitem:ab979dbb10a6e93b776e47e809907b6da" id="r_ab979dbb10a6e93b776e47e809907b6da"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab979dbb10a6e93b776e47e809907b6da">menuPersonal</a> ()</td></tr>
+<tr class="memdesc:ab979dbb10a6e93b776e47e809907b6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe e controla o menu do personal trainer.  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="a11e1d4b59f39dc2a7971a29137617dd5" name="a11e1d4b59f39dc2a7971a29137617dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e1d4b59f39dc2a7971a29137617dd5">&#9670;&#160;</a></span>buscarTreinoPorCPF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_treino.html">Treino</a> * buscarTreinoPorCPF </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca um treino pelo CPF do aluno. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cpf</td><td>String contendo o CPF do aluno. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ponteiro para o <a class="el" href="struct_treino.html" title="Estrutura que representa um treino associado a um aluno.">Treino</a> encontrado, ou NULL se nao existir.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cpf</td><td>String contendo o CPF do aluno. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ponteiro para o primeiro <a class="el" href="struct_treino.html" title="Estrutura que representa um treino associado a um aluno.">Treino</a> encontrado, ou NULL se nao existir. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>                                       {</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>; i++) {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">if</span> (strcmp(<a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[i].cpf_aluno, cpf) == 0)</div>
+<div class="line"><span class="lineno">  106</span>            <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[i];</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+<div class="ttc" id="apersonal_8c_html_aa924c9ab80ed491ab943737c682238e0"><div class="ttname"><a href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a></div><div class="ttdeci">int totalTreinos</div><div class="ttdef"><b>Definição</b> personal.c:11</div></div>
+<div class="ttc" id="apersonal_8c_html_ab0e9de5f8fca18a847897dc61916931a"><div class="ttname"><a href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a></div><div class="ttdeci">Treino treinos[100]</div><div class="ttdef"><b>Definição</b> personal.c:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a36a805a6cabc81c84e804fc4c2175428" name="a36a805a6cabc81c84e804fc4c2175428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a805a6cabc81c84e804fc4c2175428">&#9670;&#160;</a></span>cadastrarTreino()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cadastrarTreino </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cadastra um novo treino associado a um aluno pelo CPF. </p>
+<p>Cadastra um novo treino no sistema.</p>
+<p>Cadastra um novo treino associado a um aluno pelo CPF.</p>
+<p>Solicita o CPF do aluno e os dados do treino ao usuario. Valida CPF, peso, repeticoes e series antes de cadastrar. </p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                       {</div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a> &gt;= 100) {</div>
+<div class="line"><span class="lineno">   21</span>        printf(<span class="stringliteral">&quot;Limite de treinos atingido!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordtype">char</span> cpf[12];</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordtype">char</span> exercicio[100];</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordtype">int</span> peso, repeticoes, series;</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    printf(<span class="stringliteral">&quot;CPF do aluno: &quot;</span>);</div>
+<div class="line"><span class="lineno">   30</span>    scanf(<span class="stringliteral">&quot; %11s&quot;</span>, cpf);</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    printf(<span class="stringliteral">&quot;Exercicio: &quot;</span>);</div>
+<div class="line"><span class="lineno">   33</span>    scanf(<span class="stringliteral">&quot; %99[^\n]&quot;</span>, exercicio);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    printf(<span class="stringliteral">&quot;Peso: &quot;</span>);</div>
+<div class="line"><span class="lineno">   36</span>    scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;peso);</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    printf(<span class="stringliteral">&quot;Repeticoes: &quot;</span>);</div>
+<div class="line"><span class="lineno">   39</span>    scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;repeticoes);</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    printf(<span class="stringliteral">&quot;Series: &quot;</span>);</div>
+<div class="line"><span class="lineno">   42</span>    scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;series);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (strlen(cpf) == 0) {</div>
+<div class="line"><span class="lineno">   45</span>        printf(<span class="stringliteral">&quot;CPF nao pode ser vazio!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (peso &lt;= 0) {</div>
+<div class="line"><span class="lineno">   50</span>        printf(<span class="stringliteral">&quot;Peso invalido!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (repeticoes &lt;= 0 || series &lt;= 0) {</div>
+<div class="line"><span class="lineno">   55</span>        printf(<span class="stringliteral">&quot;Repeticoes e series devem ser maiores que zero!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    strcpy(<a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[<a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>].cpf_aluno, cpf);</div>
+<div class="line"><span class="lineno">   60</span>    strcpy(<a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[<a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>].exercicio, exercicio);</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[<a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>].peso = peso;</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[<a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>].repeticoes = repeticoes;</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[<a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>].series = series;</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>++;</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    printf(<span class="stringliteral">&quot;Treino cadastrado com sucesso!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   68</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ae2a188138ed542591a5d1f1e48afe4" name="a4ae2a188138ed542591a5d1f1e48afe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae2a188138ed542591a5d1f1e48afe4">&#9670;&#160;</a></span>listarTreinos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listarTreinos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista todos os treinos cadastrados no sistema. </p>
+<p>Lista todos os treinos cadastrados.</p>
+<p>Lista todos os treinos cadastrados no sistema.</p>
+<p>Exibe CPF do aluno e dados do treino. Caso nenhum tenha sido cadastrado, exibe mensagem informativa. </p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                     {</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a> == 0) {</div>
+<div class="line"><span class="lineno">   78</span>        printf(<span class="stringliteral">&quot;Nenhum treino cadastrado.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    printf(<span class="stringliteral">&quot;\n=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   83</span>    printf(<span class="stringliteral">&quot;\n===== LISTA DE TREINOS =====\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   84</span>    printf(<span class="stringliteral">&quot;=================================\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a>; i++) {</div>
+<div class="line"><span class="lineno">   87</span>        printf(<span class="stringliteral">&quot;\n---------------------------------\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   88</span>        printf(<span class="stringliteral">&quot;\nTreino %d\n&quot;</span>, i + 1);</div>
+<div class="line"><span class="lineno">   89</span>        printf(<span class="stringliteral">&quot;CPF do aluno: %s\n&quot;</span>, <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[i].cpf_aluno);</div>
+<div class="line"><span class="lineno">   90</span>        printf(<span class="stringliteral">&quot;Exercicio: %s\n&quot;</span>, <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[i].exercicio);</div>
+<div class="line"><span class="lineno">   91</span>        printf(<span class="stringliteral">&quot;Peso: %d\n&quot;</span>, <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[i].peso);</div>
+<div class="line"><span class="lineno">   92</span>        printf(<span class="stringliteral">&quot;Repeticoes: %d\n&quot;</span>, <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[i].repeticoes);</div>
+<div class="line"><span class="lineno">   93</span>        printf(<span class="stringliteral">&quot;Series: %d\n&quot;</span>, <a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>[i].series);</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+<div class="line"><span class="lineno">   95</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab979dbb10a6e93b776e47e809907b6da" name="ab979dbb10a6e93b776e47e809907b6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab979dbb10a6e93b776e47e809907b6da">&#9670;&#160;</a></span>menuPersonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void menuPersonal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exibe e controla o menu do personal trainer. </p>
+<p>Loop continuo ate que o usuario escolha sair (opcao 0). </p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>                    {</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">int</span> opcao;</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  120</span>        printf(<span class="stringliteral">&quot;\n=== SISTEMA PERSONAL TRAINER ===\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>        printf(<span class="stringliteral">&quot;1 - Cadastrar treino\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  122</span>        printf(<span class="stringliteral">&quot;2 - Listar treinos\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  123</span>        printf(<span class="stringliteral">&quot;0 - Sair\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  124</span>        printf(<span class="stringliteral">&quot;Escolha uma opcao: &quot;</span>);</div>
+<div class="line"><span class="lineno">  125</span>        scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;opcao);</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">switch</span> (opcao) {</div>
+<div class="line"><span class="lineno">  128</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">  129</span>                <a class="code hl_function" href="personal_8c.html#a36a805a6cabc81c84e804fc4c2175428">cadastrarTreino</a>();</div>
+<div class="line"><span class="lineno">  130</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">  133</span>                <a class="code hl_function" href="personal_8c.html#a4ae2a188138ed542591a5d1f1e48afe4">listarTreinos</a>();</div>
+<div class="line"><span class="lineno">  134</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">case</span> 0:</div>
+<div class="line"><span class="lineno">  137</span>                printf(<span class="stringliteral">&quot;Saindo...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  138</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  141</span>                printf(<span class="stringliteral">&quot;Opcao invalida!\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  142</span>        }</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    } <span class="keywordflow">while</span> (opcao != 0);</div>
+<div class="line"><span class="lineno">  145</span>}</div>
+<div class="ttc" id="apersonal_8c_html_a36a805a6cabc81c84e804fc4c2175428"><div class="ttname"><a href="personal_8c.html#a36a805a6cabc81c84e804fc4c2175428">cadastrarTreino</a></div><div class="ttdeci">void cadastrarTreino()</div><div class="ttdoc">Cadastra um novo treino no sistema.</div><div class="ttdef"><b>Definição</b> personal.c:19</div></div>
+<div class="ttc" id="apersonal_8c_html_a4ae2a188138ed542591a5d1f1e48afe4"><div class="ttname"><a href="personal_8c.html#a4ae2a188138ed542591a5d1f1e48afe4">listarTreinos</a></div><div class="ttdeci">void listarTreinos()</div><div class="ttdoc">Lista todos os treinos cadastrados.</div><div class="ttdef"><b>Definição</b> personal.c:76</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_61dac2bb30eaf8a10af339b83a06b3fd.html">fithub-academia</a></li><li class="navelem"><a href="personal_8h.html">personal.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -43,3 +43,5 @@ Treino* buscarTreinoPorCPF(char cpf[]);
 void menuPersonal();
 
 #endif
+
+//TESTE GIT

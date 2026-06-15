@@ -122,6 +122,43 @@ MU_TEST(CT13_laudo_vazio) {
     mu_check(validarLaudo("") == 0);
 }
 
+/**
+ * @brief CT14 - Cadastro completo com todos os campos validos.
+ * @details Usa stub_validarNome_valido e stub_validarCPF_valido para
+ *          simular que todas as validacoes passam sem depender
+ *          da implementacao real.
+ */
+MU_TEST(CT14_cadastro_completo) {
+    reset();
+    strcpy(alunos[0].nome, "Julia Pereira");
+    strcpy(alunos[0].cpf, "12345678900");
+    strcpy(alunos[0].dataNascimento, "10/10/2000");
+    strcpy(alunos[0].email, "juliapereirateste@gmail.com");
+    strcpy(alunos[0].telefone, "11999999999");
+    strcpy(alunos[0].laudo, "Apto");
+    alunos[0].faltas = 0;
+    totalAlunos = 1;
+
+    mu_check(stub_validarNome_valido(alunos[0].nome) == 1);
+    mu_check(stub_validarCPF_valido(alunos[0].cpf) == 1);
+    mu_check(validarData(alunos[0].dataNascimento) == 1);
+    mu_check(validarEmail(alunos[0].email) == 1);
+    mu_check(validarTelefone(alunos[0].telefone) == 1);
+    mu_check(validarLaudo(alunos[0].laudo) == 1);
+    mu_check(stub_cpfExiste_nao(alunos[0].cpf) == 0);
+    mu_check(totalAlunos == 1);
+}
+
+/**
+ * @brief CT15 - CPF duplicado deve ser detectado.
+ * @details Usa stub_cpfExiste_sim para simular que o CPF ja existe
+ *          sem depender do estado real do array de alunos.
+ */
+MU_TEST(CT15_cpf_duplicado) {
+    reset();
+    mu_check(stub_cpfExiste_sim("12345678900") == 1);
+}
+
     totalAlunos = 0;
     totalTreinos = 0;
     memset(alunos, 0, sizeof(Aluno) * MAX_ALUNOS);

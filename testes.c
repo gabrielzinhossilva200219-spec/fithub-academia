@@ -92,6 +92,16 @@ MU_TEST(CT07_data_invalida) {
     mu_check(validarData("99/99/9999") == 0);
 }
 
+/** @brief CT08 - Email com arroba e .com deve ser aceito. */
+MU_TEST(CT08_email_valido) {
+    mu_check(validarEmail("juliapereirateste@gmail.com") == 1);
+}
+
+/** @brief CT09 - Email sem arroba deve ser rejeitado. */
+MU_TEST(CT09_email_invalido) {
+    mu_check(validarEmail("juliapereirateste.com") == 0);
+}
+
     totalAlunos = 0;
     totalTreinos = 0;
     memset(alunos, 0, sizeof(Aluno) * MAX_ALUNOS);

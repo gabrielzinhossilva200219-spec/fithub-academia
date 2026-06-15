@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FitHub Academia: Referência do Arquivo C:/Users/kenne/fithub-academia/testes.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FitHub Academia<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">FitHub Academia é um sistema para gerenciamento de uma academia pública em Cruzeiro-SP. Realiza cadastro de alunos, rotinas de treino e tarefas administrativas de forma organizada e eficiente.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('testes_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo testes.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Testes unitarios do sistema FitHub Academia utilizando MinUnit.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="minunit_8h_source.html">minunit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="recepcionista_8h_source.html">recepcionista.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="personal_8h_source.html">personal.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae4a3e355a38043f7ad6e8e2f41c6ea89" id="r_ae4a3e355a38043f7ad6e8e2f41c6ea89"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">stub_validarNome_valido</a> (char nome[])</td></tr>
+<tr class="memdesc:ae4a3e355a38043f7ad6e8e2f41c6ea89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de nome sempre valida.  <br /></td></tr>
+<tr class="memitem:a34998ca212b57782d821246a06f76dd2" id="r_a34998ca212b57782d821246a06f76dd2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a34998ca212b57782d821246a06f76dd2">stub_validarNome_invalido</a> (char nome[])</td></tr>
+<tr class="memdesc:a34998ca212b57782d821246a06f76dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de nome sempre invalida.  <br /></td></tr>
+<tr class="memitem:a6b23164ad4701b358d478d5b814319d0" id="r_a6b23164ad4701b358d478d5b814319d0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6b23164ad4701b358d478d5b814319d0">stub_validarCPF_valido</a> (char cpf[])</td></tr>
+<tr class="memdesc:a6b23164ad4701b358d478d5b814319d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de CPF sempre valida.  <br /></td></tr>
+<tr class="memitem:aa67dbeb0b65691608b5be7faa2a8efb1" id="r_aa67dbeb0b65691608b5be7faa2a8efb1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa67dbeb0b65691608b5be7faa2a8efb1">stub_validarCPF_invalido</a> (char cpf[])</td></tr>
+<tr class="memdesc:aa67dbeb0b65691608b5be7faa2a8efb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de CPF sempre invalida.  <br /></td></tr>
+<tr class="memitem:acb7835cf0a59ada767b5b9f4b64bed16" id="r_acb7835cf0a59ada767b5b9f4b64bed16"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#acb7835cf0a59ada767b5b9f4b64bed16">stub_cpfExiste_sim</a> (char cpf[])</td></tr>
+<tr class="memdesc:acb7835cf0a59ada767b5b9f4b64bed16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula que o CPF ja existe no sistema.  <br /></td></tr>
+<tr class="memitem:acbb445f854f654ea1415a9b2fabb102a" id="r_acbb445f854f654ea1415a9b2fabb102a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#acbb445f854f654ea1415a9b2fabb102a">stub_cpfExiste_nao</a> (char cpf[])</td></tr>
+<tr class="memdesc:acbb445f854f654ea1415a9b2fabb102a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula que o CPF nao existe no sistema.  <br /></td></tr>
+<tr class="memitem:ae7a84209537d74c5180c7057d7f2b079" id="r_ae7a84209537d74c5180c7057d7f2b079"><td class="memItemLeft"><a class="el" href="struct_treino.html">Treino</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ae7a84209537d74c5180c7057d7f2b079">stub_buscarTreino_encontrado</a> (char cpf[])</td></tr>
+<tr class="memdesc:ae7a84209537d74c5180c7057d7f2b079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula busca de treino por CPF que encontra resultado.  <br /></td></tr>
+<tr class="memitem:a9c98ef8bae12cb04f9746aa9069b94e5" id="r_a9c98ef8bae12cb04f9746aa9069b94e5"><td class="memItemLeft"><a class="el" href="struct_treino.html">Treino</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a9c98ef8bae12cb04f9746aa9069b94e5">stub_buscarTreino_nao_encontrado</a> (char cpf[])</td></tr>
+<tr class="memdesc:a9c98ef8bae12cb04f9746aa9069b94e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula busca de treino por CPF que nao encontra resultado.  <br /></td></tr>
+<tr class="memitem:ad20897c5c8bd47f5d4005989bead0e55" id="r_ad20897c5c8bd47f5d4005989bead0e55"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad20897c5c8bd47f5d4005989bead0e55">reset</a> ()</td></tr>
+<tr class="memitem:ae1db92886868e7504295c900ca4c72cf" id="r_ae1db92886868e7504295c900ca4c72cf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae1db92886868e7504295c900ca4c72cf">MU_TEST_SUITE</a> (suite_cadastro)</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:aafb4ed7bbd7ebee347ea0c99cf7790a5" id="r_aafb4ed7bbd7ebee347ea0c99cf7790a5"><td class="memItemLeft"><a class="el" href="struct_aluno.html">Aluno</a>&#160;</td><td class="memItemRight"><a class="el" href="#aafb4ed7bbd7ebee347ea0c99cf7790a5">alunos</a> []</td></tr>
+<tr class="memitem:ab4fab09132ef3513b5693bade7f94958" id="r_ab4fab09132ef3513b5693bade7f94958"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a></td></tr>
+<tr class="memitem:ab6f0bf1b7ea4a3c6b7c31d2d9fa7a45f" id="r_ab6f0bf1b7ea4a3c6b7c31d2d9fa7a45f"><td class="memItemLeft"><a class="el" href="struct_treino.html">Treino</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab6f0bf1b7ea4a3c6b7c31d2d9fa7a45f">treinos</a> []</td></tr>
+<tr class="memitem:aa924c9ab80ed491ab943737c682238e0" id="r_aa924c9ab80ed491ab943737c682238e0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Testes unitarios do sistema FitHub Academia utilizando MinUnit. </p>
+<p>Utiliza stubs para simular dependencias e isolar as funcoes testadas de efeitos colaterais externos. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  186</span>           {</div>
+<div class="line"><span class="lineno">  187</span>    <a class="code hl_define" href="minunit_8h.html#a686f0ed4e3fb8ffd9687895b3a1de7f7">MU_RUN_SUITE</a>(suite_cadastro);</div>
+<div class="line"><span class="lineno">  188</span>    <a class="code hl_define" href="minunit_8h.html#a34507ed892909d3f420ebe93a6ad9975">MU_REPORT</a>();</div>
+<div class="line"><span class="lineno">  189</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="minunit_8h.html#afa40e44f2c8a0afb36acface769ab13d">MU_EXIT_CODE</a>;</div>
+<div class="line"><span class="lineno">  190</span>}</div>
+<div class="ttc" id="aminunit_8h_html_a34507ed892909d3f420ebe93a6ad9975"><div class="ttname"><a href="minunit_8h.html#a34507ed892909d3f420ebe93a6ad9975">MU_REPORT</a></div><div class="ttdeci">#define MU_REPORT()</div><div class="ttdef"><b>Definição</b> minunit.h:131</div></div>
+<div class="ttc" id="aminunit_8h_html_a686f0ed4e3fb8ffd9687895b3a1de7f7"><div class="ttname"><a href="minunit_8h.html#a686f0ed4e3fb8ffd9687895b3a1de7f7">MU_RUN_SUITE</a></div><div class="ttdeci">#define MU_RUN_SUITE(suite_name)</div><div class="ttdef"><b>Definição</b> minunit.h:99</div></div>
+<div class="ttc" id="aminunit_8h_html_afa40e44f2c8a0afb36acface769ab13d"><div class="ttname"><a href="minunit_8h.html#afa40e44f2c8a0afb36acface769ab13d">MU_EXIT_CODE</a></div><div class="ttdeci">#define MU_EXIT_CODE</div><div class="ttdef"><b>Definição</b> minunit.h:141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae1db92886868e7504295c900ca4c72cf" name="ae1db92886868e7504295c900ca4c72cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1db92886868e7504295c900ca4c72cf">&#9670;&#160;</a></span>MU_TEST_SUITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST_SUITE </td>
+          <td>(</td>
+          <td class="paramtype">suite_cadastro</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  168</span>                              {</div>
+<div class="line"><span class="lineno">  169</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT01_nome_valido);</div>
+<div class="line"><span class="lineno">  170</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT02_nome_vazio);</div>
+<div class="line"><span class="lineno">  171</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT03_cpf_valido);</div>
+<div class="line"><span class="lineno">  172</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT04_cpf_vazio);</div>
+<div class="line"><span class="lineno">  173</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT05_cpf_incompleto);</div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT06_data_valida);</div>
+<div class="line"><span class="lineno">  175</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT07_data_invalida);</div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT08_email_valido);</div>
+<div class="line"><span class="lineno">  177</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT09_email_invalido);</div>
+<div class="line"><span class="lineno">  178</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT10_telefone_valido);</div>
+<div class="line"><span class="lineno">  179</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT11_telefone_vazio);</div>
+<div class="line"><span class="lineno">  180</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT12_laudo_informado);</div>
+<div class="line"><span class="lineno">  181</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT13_laudo_vazio);</div>
+<div class="line"><span class="lineno">  182</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT14_cadastro_completo);</div>
+<div class="line"><span class="lineno">  183</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT15_cpf_duplicado);</div>
+<div class="line"><span class="lineno">  184</span>}</div>
+<div class="ttc" id="aminunit_8h_html_acef7e3a7858368882ef2b560be0d10bb"><div class="ttname"><a href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a></div><div class="ttdeci">#define MU_RUN_TEST(test)</div><div class="ttdef"><b>Definição</b> minunit.h:112</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad20897c5c8bd47f5d4005989bead0e55" name="ad20897c5c8bd47f5d4005989bead0e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20897c5c8bd47f5d4005989bead0e55">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CT01 - Nome valido deve ser aceito.</p>
+<p>CT02 - Nome vazio deve ser rejeitado.</p>
+<p>CT03 - CPF com 11 digitos deve ser aceito.</p>
+<p>CT04 - CPF vazio deve ser rejeitado.</p>
+<p>CT05 - CPF com menos de 11 digitos deve ser rejeitado.</p>
+<p>CT06 - Data no formato valido deve ser aceita.</p>
+<p>CT07 - Data com dia e mes invalidos deve ser rejeitada.</p>
+<p>CT08 - Email com arroba e .com deve ser aceito.</p>
+<p>CT09 - Email sem arroba deve ser rejeitado.</p>
+<p>CT10 - Telefone com 11 digitos deve ser aceito.</p>
+<p>CT11 - Telefone vazio deve ser rejeitado.</p>
+<p>CT12 - Laudo informado deve ser aceito.</p>
+<p>CT13 - Laudo vazio deve ser rejeitado.</p>
+<p>CT14 - Cadastro completo com todos os campos validos.</p>
+<p>Usa stub_validarNome_valido e stub_validarCPF_valido para simular que todas as validacoes passam sem depender da implementacao real.</p>
+<p>CT15 - CPF duplicado deve ser detectado.</p>
+<p>Usa stub_cpfExiste_sim para simular que o CPF ja existe sem depender do estado real do array de alunos.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>             {</div>
+<div class="line"><span class="lineno">   59</span></div>
+<div class="line"><span class="lineno">   61</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT01_nome_valido) {</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aaf9d711034b463532a0d9fc0bd2272c8">validarNome</a>(<span class="stringliteral">&quot;Julia Pereira&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+<div class="line"><span class="lineno">   64</span></div>
+<div class="line"><span class="lineno">   66</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT02_nome_vazio) {</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aaf9d711034b463532a0d9fc0bd2272c8">validarNome</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   68</span>}</div>
+<div class="line"><span class="lineno">   69</span></div>
+<div class="line"><span class="lineno">   71</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT03_cpf_valido) {</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a>(<span class="stringliteral">&quot;12345678900&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+<div class="line"><span class="lineno">   74</span></div>
+<div class="line"><span class="lineno">   76</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT04_cpf_vazio) {</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="line"><span class="lineno">   79</span></div>
+<div class="line"><span class="lineno">   81</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT05_cpf_incompleto) {</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a>(<span class="stringliteral">&quot;123&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   83</span>}</div>
+<div class="line"><span class="lineno">   84</span></div>
+<div class="line"><span class="lineno">   86</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT06_data_valida) {</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a>(<span class="stringliteral">&quot;10/10/2000&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   88</span>}</div>
+<div class="line"><span class="lineno">   89</span></div>
+<div class="line"><span class="lineno">   91</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT07_data_invalida) {</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a>(<span class="stringliteral">&quot;99/99/9999&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   93</span>}</div>
+<div class="line"><span class="lineno">   94</span></div>
+<div class="line"><span class="lineno">   96</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT08_email_valido) {</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a>(<span class="stringliteral">&quot;juliapereirateste@gmail.com&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   98</span>}</div>
+<div class="line"><span class="lineno">   99</span></div>
+<div class="line"><span class="lineno">  101</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT09_email_invalido) {</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a>(<span class="stringliteral">&quot;juliapereirateste.com&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+<div class="line"><span class="lineno">  104</span></div>
+<div class="line"><span class="lineno">  106</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT10_telefone_valido) {</div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a>(<span class="stringliteral">&quot;11999999999&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">  108</span>}</div>
+<div class="line"><span class="lineno">  109</span></div>
+<div class="line"><span class="lineno">  111</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT11_telefone_vazio) {</div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  113</span>}</div>
+<div class="line"><span class="lineno">  114</span></div>
+<div class="line"><span class="lineno">  116</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT12_laudo_informado) {</div>
+<div class="line"><span class="lineno">  117</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a>(<span class="stringliteral">&quot;Apto&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">  118</span>}</div>
+<div class="line"><span class="lineno">  119</span></div>
+<div class="line"><span class="lineno">  121</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT13_laudo_vazio) {</div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  123</span>}</div>
+<div class="line"><span class="lineno">  124</span></div>
+<div class="line"><span class="lineno">  131</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT14_cadastro_completo) {</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_function" href="#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
+<div class="line"><span class="lineno">  133</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].nome, <span class="stringliteral">&quot;Julia Pereira&quot;</span>);</div>
+<div class="line"><span class="lineno">  134</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].cpf, <span class="stringliteral">&quot;12345678900&quot;</span>);</div>
+<div class="line"><span class="lineno">  135</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].dataNascimento, <span class="stringliteral">&quot;10/10/2000&quot;</span>);</div>
+<div class="line"><span class="lineno">  136</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].email, <span class="stringliteral">&quot;juliapereirateste@gmail.com&quot;</span>);</div>
+<div class="line"><span class="lineno">  137</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].telefone, <span class="stringliteral">&quot;11999999999&quot;</span>);</div>
+<div class="line"><span class="lineno">  138</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].laudo, <span class="stringliteral">&quot;Apto&quot;</span>);</div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].faltas = 0;</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_variable" href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a> = 1;</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">stub_validarNome_valido</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].nome) == 1);</div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#a6b23164ad4701b358d478d5b814319d0">stub_validarCPF_valido</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].cpf) == 1);</div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].dataNascimento) == 1);</div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].email) == 1);</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].telefone) == 1);</div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].laudo) == 1);</div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#acbb445f854f654ea1415a9b2fabb102a">stub_cpfExiste_nao</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].cpf) == 0);</div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_variable" href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a> == 1);</div>
+<div class="line"><span class="lineno">  150</span>}</div>
+<div class="line"><span class="lineno">  151</span></div>
+<div class="line"><span class="lineno">  157</span><a class="code hl_define" href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a>(CT15_cpf_duplicado) {</div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_function" href="#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#acb7835cf0a59ada767b5b9f4b64bed16">stub_cpfExiste_sim</a>(<span class="stringliteral">&quot;12345678900&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">  160</span>}</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    <a class="code hl_variable" href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a> = 0;</div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_variable" href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a> = 0;</div>
+<div class="line"><span class="lineno">  164</span>    memset(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct_aluno.html">Aluno</a>) * <a class="code hl_define" href="recepcionista_8h.html#afabe40c988deb46665abf62cf618393d">MAX_ALUNOS</a>);</div>
+<div class="line"><span class="lineno">  165</span>    memset(<a class="code hl_variable" href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct_treino.html">Treino</a>) * 100);</div>
+<div class="line"><span class="lineno">  166</span>}</div>
+<div class="ttc" id="aminunit_8h_html_a591ca1b29e41e52d7bf5bd74995b7d66"><div class="ttname"><a href="minunit_8h.html#a591ca1b29e41e52d7bf5bd74995b7d66">MU_TEST</a></div><div class="ttdeci">#define MU_TEST(method_name)</div><div class="ttdef"><b>Definição</b> minunit.h:91</div></div>
+<div class="ttc" id="aminunit_8h_html_ad8ca133baa1f0f576239631f37790b2b"><div class="ttname"><a href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a></div><div class="ttdeci">#define mu_check(test)</div><div class="ttdef"><b>Definição</b> minunit.h:144</div></div>
+<div class="ttc" id="apersonal_8c_html_aa924c9ab80ed491ab943737c682238e0"><div class="ttname"><a href="personal_8c.html#aa924c9ab80ed491ab943737c682238e0">totalTreinos</a></div><div class="ttdeci">int totalTreinos</div><div class="ttdef"><b>Definição</b> personal.c:11</div></div>
+<div class="ttc" id="apersonal_8c_html_ab0e9de5f8fca18a847897dc61916931a"><div class="ttname"><a href="personal_8c.html#ab0e9de5f8fca18a847897dc61916931a">treinos</a></div><div class="ttdeci">Treino treinos[100]</div><div class="ttdef"><b>Definição</b> personal.c:10</div></div>
+<div class="ttc" id="arecepcionista_8c_html_a253181316d586d04c4a5a4bf15b917f4"><div class="ttname"><a href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a></div><div class="ttdeci">int validarTelefone(char telefone[])</div><div class="ttdoc">Valida se o telefone possui exatamente 11 digitos.</div><div class="ttdef"><b>Definição</b> recepcionista.c:71</div></div>
+<div class="ttc" id="arecepcionista_8c_html_a2e2ea0a75e84c9355ccddc35363e6e02"><div class="ttname"><a href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a></div><div class="ttdeci">int validarLaudo(char laudo[])</div><div class="ttdoc">Valida se o laudo medico nao e vazio.</div><div class="ttdef"><b>Definição</b> recepcionista.c:81</div></div>
+<div class="ttc" id="arecepcionista_8c_html_a87e899a5d73fa6d88ae16c3131f18457"><div class="ttname"><a href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a></div><div class="ttdeci">Aluno alunos[MAX_ALUNOS]</div><div class="ttdef"><b>Definição</b> recepcionista.c:11</div></div>
+<div class="ttc" id="arecepcionista_8c_html_aa67d7c01198e713a7ded6d8f8edc834e"><div class="ttname"><a href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a></div><div class="ttdeci">int validarEmail(char email[])</div><div class="ttdoc">Valida se o email contem &#39;@&#39; e &#39;.com&#39;.</div><div class="ttdef"><b>Definição</b> recepcionista.c:60</div></div>
+<div class="ttc" id="arecepcionista_8c_html_aaf9d711034b463532a0d9fc0bd2272c8"><div class="ttname"><a href="recepcionista_8c.html#aaf9d711034b463532a0d9fc0bd2272c8">validarNome</a></div><div class="ttdeci">int validarNome(char nome[])</div><div class="ttdoc">Valida se o nome nao e vazio.</div><div class="ttdef"><b>Definição</b> recepcionista.c:19</div></div>
+<div class="ttc" id="arecepcionista_8c_html_ab4fab09132ef3513b5693bade7f94958"><div class="ttname"><a href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a></div><div class="ttdeci">int totalAlunos</div><div class="ttdef"><b>Definição</b> recepcionista.c:12</div></div>
+<div class="ttc" id="arecepcionista_8c_html_afcdbaa17370f54b6acc8a2c0c82a8044"><div class="ttname"><a href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a></div><div class="ttdeci">int validarCPF(char cpf[])</div><div class="ttdoc">Valida se o CPF possui exatamente 11 digitos.</div><div class="ttdef"><b>Definição</b> recepcionista.c:29</div></div>
+<div class="ttc" id="arecepcionista_8c_html_afe2ffb2e12eaca587dd3a24a2b60ccf4"><div class="ttname"><a href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a></div><div class="ttdeci">int validarData(char data[])</div><div class="ttdoc">Valida se a data esta no formato dd/mm/aaaa com valores coerentes.</div><div class="ttdef"><b>Definição</b> recepcionista.c:39</div></div>
+<div class="ttc" id="arecepcionista_8h_html_afabe40c988deb46665abf62cf618393d"><div class="ttname"><a href="recepcionista_8h.html#afabe40c988deb46665abf62cf618393d">MAX_ALUNOS</a></div><div class="ttdeci">#define MAX_ALUNOS</div><div class="ttdef"><b>Definição</b> recepcionista.h:6</div></div>
+<div class="ttc" id="astruct_aluno_html"><div class="ttname"><a href="struct_aluno.html">Aluno</a></div><div class="ttdoc">Estrutura que representa um aluno cadastrado no sistema.</div><div class="ttdef"><b>Definição</b> recepcionista.h:12</div></div>
+<div class="ttc" id="astruct_treino_html"><div class="ttname"><a href="struct_treino.html">Treino</a></div><div class="ttdoc">Estrutura que representa um treino associado a um aluno.</div><div class="ttdef"><b>Definição</b> personal.h:11</div></div>
+<div class="ttc" id="atestes_8c_html_a6b23164ad4701b358d478d5b814319d0"><div class="ttname"><a href="#a6b23164ad4701b358d478d5b814319d0">stub_validarCPF_valido</a></div><div class="ttdeci">int stub_validarCPF_valido(char cpf[])</div><div class="ttdoc">Stub: simula validacao de CPF sempre valida.</div><div class="ttdef"><b>Definição</b> testes.c:33</div></div>
+<div class="ttc" id="atestes_8c_html_acb7835cf0a59ada767b5b9f4b64bed16"><div class="ttname"><a href="#acb7835cf0a59ada767b5b9f4b64bed16">stub_cpfExiste_sim</a></div><div class="ttdeci">int stub_cpfExiste_sim(char cpf[])</div><div class="ttdoc">Stub: simula que o CPF ja existe no sistema.</div><div class="ttdef"><b>Definição</b> testes.c:39</div></div>
+<div class="ttc" id="atestes_8c_html_acbb445f854f654ea1415a9b2fabb102a"><div class="ttname"><a href="#acbb445f854f654ea1415a9b2fabb102a">stub_cpfExiste_nao</a></div><div class="ttdeci">int stub_cpfExiste_nao(char cpf[])</div><div class="ttdoc">Stub: simula que o CPF nao existe no sistema.</div><div class="ttdef"><b>Definição</b> testes.c:42</div></div>
+<div class="ttc" id="atestes_8c_html_ad20897c5c8bd47f5d4005989bead0e55"><div class="ttname"><a href="#ad20897c5c8bd47f5d4005989bead0e55">reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definição</b> testes.c:58</div></div>
+<div class="ttc" id="atestes_8c_html_ae4a3e355a38043f7ad6e8e2f41c6ea89"><div class="ttname"><a href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">stub_validarNome_valido</a></div><div class="ttdeci">int stub_validarNome_valido(char nome[])</div><div class="ttdoc">Stub: simula validacao de nome sempre valida.</div><div class="ttdef"><b>Definição</b> testes.c:27</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae7a84209537d74c5180c7057d7f2b079" name="ae7a84209537d74c5180c7057d7f2b079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a84209537d74c5180c7057d7f2b079">&#9670;&#160;</a></span>stub_buscarTreino_encontrado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_treino.html">Treino</a> * stub_buscarTreino_encontrado </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula busca de treino por CPF que encontra resultado. </p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                 {</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keyword">static</span> <a class="code hl_struct" href="struct_treino.html">Treino</a> t;</div>
+<div class="line"><span class="lineno">   47</span>    strcpy(t.<a class="code hl_variable" href="struct_treino.html#ab9ce38e4f3f396255f4b8106512a31db">cpf_aluno</a>, cpf);</div>
+<div class="line"><span class="lineno">   48</span>    strcpy(t.<a class="code hl_variable" href="struct_treino.html#aa3044f274b9b124df40137aa7b6b184c">exercicio</a>, <span class="stringliteral">&quot;Supino&quot;</span>);</div>
+<div class="line"><span class="lineno">   49</span>    t.<a class="code hl_variable" href="struct_treino.html#a865e43c6ce592caf9952354bdb792a6e">peso</a> = 60; t.<a class="code hl_variable" href="struct_treino.html#a3556b8b9480c17af17ce5b1651e4ffb3">repeticoes</a> = 10; t.<a class="code hl_variable" href="struct_treino.html#a8c462890b37343a8c9c7830a7dfdc31f">series</a> = 3;</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> &amp;t;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+<div class="ttc" id="astruct_treino_html_a3556b8b9480c17af17ce5b1651e4ffb3"><div class="ttname"><a href="struct_treino.html#a3556b8b9480c17af17ce5b1651e4ffb3">Treino::repeticoes</a></div><div class="ttdeci">int repeticoes</div><div class="ttdef"><b>Definição</b> personal.h:15</div></div>
+<div class="ttc" id="astruct_treino_html_a865e43c6ce592caf9952354bdb792a6e"><div class="ttname"><a href="struct_treino.html#a865e43c6ce592caf9952354bdb792a6e">Treino::peso</a></div><div class="ttdeci">int peso</div><div class="ttdef"><b>Definição</b> personal.h:14</div></div>
+<div class="ttc" id="astruct_treino_html_a8c462890b37343a8c9c7830a7dfdc31f"><div class="ttname"><a href="struct_treino.html#a8c462890b37343a8c9c7830a7dfdc31f">Treino::series</a></div><div class="ttdeci">int series</div><div class="ttdef"><b>Definição</b> personal.h:16</div></div>
+<div class="ttc" id="astruct_treino_html_aa3044f274b9b124df40137aa7b6b184c"><div class="ttname"><a href="struct_treino.html#aa3044f274b9b124df40137aa7b6b184c">Treino::exercicio</a></div><div class="ttdeci">char exercicio[100]</div><div class="ttdef"><b>Definição</b> personal.h:13</div></div>
+<div class="ttc" id="astruct_treino_html_ab9ce38e4f3f396255f4b8106512a31db"><div class="ttname"><a href="struct_treino.html#ab9ce38e4f3f396255f4b8106512a31db">Treino::cpf_aluno</a></div><div class="ttdeci">char cpf_aluno[12]</div><div class="ttdef"><b>Definição</b> personal.h:12</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c98ef8bae12cb04f9746aa9069b94e5" name="a9c98ef8bae12cb04f9746aa9069b94e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c98ef8bae12cb04f9746aa9069b94e5">&#9670;&#160;</a></span>stub_buscarTreino_nao_encontrado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_treino.html">Treino</a> * stub_buscarTreino_nao_encontrado </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula busca de treino por CPF que nao encontra resultado. </p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> NULL; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbb445f854f654ea1415a9b2fabb102a" name="acbb445f854f654ea1415a9b2fabb102a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb445f854f654ea1415a9b2fabb102a">&#9670;&#160;</a></span>stub_cpfExiste_nao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_cpfExiste_nao </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula que o CPF nao existe no sistema. </p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb7835cf0a59ada767b5b9f4b64bed16" name="acb7835cf0a59ada767b5b9f4b64bed16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7835cf0a59ada767b5b9f4b64bed16">&#9670;&#160;</a></span>stub_cpfExiste_sim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_cpfExiste_sim </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula que o CPF ja existe no sistema. </p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> 1; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa67dbeb0b65691608b5be7faa2a8efb1" name="aa67dbeb0b65691608b5be7faa2a8efb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67dbeb0b65691608b5be7faa2a8efb1">&#9670;&#160;</a></span>stub_validarCPF_invalido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarCPF_invalido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de CPF sempre invalida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6b23164ad4701b358d478d5b814319d0" name="a6b23164ad4701b358d478d5b814319d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b23164ad4701b358d478d5b814319d0">&#9670;&#160;</a></span>stub_validarCPF_valido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarCPF_valido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de CPF sempre valida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> 1; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a34998ca212b57782d821246a06f76dd2" name="a34998ca212b57782d821246a06f76dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34998ca212b57782d821246a06f76dd2">&#9670;&#160;</a></span>stub_validarNome_invalido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarNome_invalido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de nome sempre invalida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{ <span class="keywordflow">return</span> 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4a3e355a38043f7ad6e8e2f41c6ea89" name="ae4a3e355a38043f7ad6e8e2f41c6ea89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">&#9670;&#160;</a></span>stub_validarNome_valido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarNome_valido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de nome sempre valida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> 1; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="aafb4ed7bbd7ebee347ea0c99cf7790a5" name="aafb4ed7bbd7ebee347ea0c99cf7790a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb4ed7bbd7ebee347ea0c99cf7790a5">&#9670;&#160;</a></span>alunos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_aluno.html">Aluno</a> alunos[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4fab09132ef3513b5693bade7f94958" name="ab4fab09132ef3513b5693bade7f94958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fab09132ef3513b5693bade7f94958">&#9670;&#160;</a></span>totalAlunos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int totalAlunos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa924c9ab80ed491ab943737c682238e0" name="aa924c9ab80ed491ab943737c682238e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa924c9ab80ed491ab943737c682238e0">&#9670;&#160;</a></span>totalTreinos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int totalTreinos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6f0bf1b7ea4a3c6b7c31d2d9fa7a45f" name="ab6f0bf1b7ea4a3c6b7c31d2d9fa7a45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f0bf1b7ea4a3c6b7c31d2d9fa7a45f">&#9670;&#160;</a></span>treinos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_treino.html">Treino</a> treinos[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_61dac2bb30eaf8a10af339b83a06b3fd.html">fithub-academia</a></li><li class="navelem"><a href="testes_8c.html">testes.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

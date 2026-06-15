@@ -1,9 +1,20 @@
+/**
+ * @file personal.c
+ * @brief Implementacao das funcoes do modulo personal trainer.
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include "personal.h"
 
 Treino treinos[100];
 int totalTreinos = 0;
+
+/**
+ * @brief Cadastra um novo treino no sistema.
+ * @details Solicita o CPF do aluno e os dados do treino ao usuario.
+ *          Valida CPF, peso, repeticoes e series antes de cadastrar.
+ */
 
 void cadastrarTreino() {
     if (totalTreinos >= 100) {
@@ -56,6 +67,12 @@ void cadastrarTreino() {
     printf("Treino cadastrado com sucesso!\n");
 }
 
+/**
+ * @brief Lista todos os treinos cadastrados.
+ * @details Exibe CPF do aluno e dados do treino. Caso nenhum tenha sido
+ *          cadastrado, exibe mensagem informativa.
+ */
+
 void listarTreinos() {
     if (totalTreinos == 0) {
         printf("Nenhum treino cadastrado.\n");
@@ -77,6 +94,12 @@ void listarTreinos() {
     }
 }
 
+/**
+ * @brief Busca um treino pelo CPF do aluno.
+ * @param cpf String contendo o CPF do aluno.
+ * @return Ponteiro para o primeiro Treino encontrado, ou NULL se nao existir.
+ */
+
 Treino* buscarTreinoPorCPF(char cpf[]) {
     for (int i = 0; i < totalTreinos; i++) {
         if (strcmp(treinos[i].cpf_aluno, cpf) == 0)
@@ -84,6 +107,11 @@ Treino* buscarTreinoPorCPF(char cpf[]) {
     }
     return NULL;
 }
+
+/**
+ * @brief Exibe e controla o menu do personal trainer.
+ * @details Loop continuo ate que o usuario escolha sair (opcao 0).
+ */
 
 void menuPersonal() {
     int opcao;

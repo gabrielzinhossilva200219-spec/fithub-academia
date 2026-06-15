@@ -164,3 +164,27 @@ MU_TEST(CT15_cpf_duplicado) {
     memset(alunos, 0, sizeof(Aluno) * MAX_ALUNOS);
     memset(treinos, 0, sizeof(Treino) * 100);
 }
+
+MU_TEST_SUITE(suite_cadastro) {
+    MU_RUN_TEST(CT01_nome_valido);
+    MU_RUN_TEST(CT02_nome_vazio);
+    MU_RUN_TEST(CT03_cpf_valido);
+    MU_RUN_TEST(CT04_cpf_vazio);
+    MU_RUN_TEST(CT05_cpf_incompleto);
+    MU_RUN_TEST(CT06_data_valida);
+    MU_RUN_TEST(CT07_data_invalida);
+    MU_RUN_TEST(CT08_email_valido);
+    MU_RUN_TEST(CT09_email_invalido);
+    MU_RUN_TEST(CT10_telefone_valido);
+    MU_RUN_TEST(CT11_telefone_vazio);
+    MU_RUN_TEST(CT12_laudo_informado);
+    MU_RUN_TEST(CT13_laudo_vazio);
+    MU_RUN_TEST(CT14_cadastro_completo);
+    MU_RUN_TEST(CT15_cpf_duplicado);
+}
+
+int main() {
+    MU_RUN_SUITE(suite_cadastro);
+    MU_REPORT();
+    return MU_EXIT_CODE;
+}

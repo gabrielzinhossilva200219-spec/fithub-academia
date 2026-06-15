@@ -56,6 +56,17 @@ Treino* stub_buscarTreino_nao_encontrado(char cpf[]) { return NULL; }
 /* ===== SETUP ===== */
 
 void reset() {
+
+    /** @brief CT01 - Nome valido deve ser aceito. */
+MU_TEST(CT01_nome_valido) {
+    mu_check(validarNome("Julia Pereira") == 1);
+}
+
+/** @brief CT02 - Nome vazio deve ser rejeitado. */
+MU_TEST(CT02_nome_vazio) {
+    mu_check(validarNome("") == 0);
+}
+
     totalAlunos = 0;
     totalTreinos = 0;
     memset(alunos, 0, sizeof(Aluno) * MAX_ALUNOS);

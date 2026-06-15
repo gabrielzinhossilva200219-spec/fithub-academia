@@ -102,6 +102,26 @@ MU_TEST(CT09_email_invalido) {
     mu_check(validarEmail("juliapereirateste.com") == 0);
 }
 
+/** @brief CT10 - Telefone com 11 digitos deve ser aceito. */
+MU_TEST(CT10_telefone_valido) {
+    mu_check(validarTelefone("11999999999") == 1);
+}
+
+/** @brief CT11 - Telefone vazio deve ser rejeitado. */
+MU_TEST(CT11_telefone_vazio) {
+    mu_check(validarTelefone("") == 0);
+}
+
+/** @brief CT12 - Laudo informado deve ser aceito. */
+MU_TEST(CT12_laudo_informado) {
+    mu_check(validarLaudo("Apto") == 1);
+}
+
+/** @brief CT13 - Laudo vazio deve ser rejeitado. */
+MU_TEST(CT13_laudo_vazio) {
+    mu_check(validarLaudo("") == 0);
+}
+
     totalAlunos = 0;
     totalTreinos = 0;
     memset(alunos, 0, sizeof(Aluno) * MAX_ALUNOS);

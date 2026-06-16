@@ -5,30 +5,11 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 #include "gerente.h"
 
 Funcionario funcionarios[MAX_FUNCIONARIOS];
 int totalFuncionarios = 0;
-
-
-
-static void limparTela()
-{
-#ifdef _WIN32
-    system("cls");
-#else
-    system("clear");
-#endif
-}
-
-static void pausarTela()
-{
-    printf("\nPressione ENTER para continuar...");
-    getchar();
-    getchar();
-}
 
 /**
  * @brief Cadastra uma nova recepcionista.

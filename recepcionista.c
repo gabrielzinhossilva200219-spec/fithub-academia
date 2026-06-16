@@ -5,30 +5,11 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 #include "recepcionista.h"
 
 Aluno alunos[MAX_ALUNOS];
 int totalAlunos = 0;
-
-
-
-void limparTela()
-{
-#ifdef _WIN32
-    system("cls");
-#else
-    system("clear");
-#endif
-}
-
-void pausarTela()
-{
-    printf("\nPressione ENTER para continuar...");
-    getchar();
-    getchar();
-}
 
 /**
  * @brief Valida se o nome nao e vazio.

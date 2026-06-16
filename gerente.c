@@ -96,12 +96,7 @@ void listarFuncionarios()
 
     for (int i = 0; i < totalFuncionarios; i++)
     {
-        printf(
-            "%d - %s (%s)\n",
-            i + 1,
-            funcionarios[i].nome,
-            funcionarios[i].cargo
-        );
+        printf("%d - %s (%s)\n", i + 1, funcionarios[i].nome, funcionarios[i].cargo);
     }
 }
 

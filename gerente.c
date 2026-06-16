@@ -14,7 +14,7 @@ int totalFuncionarios = 0;
 
 
 
-void limparTela()
+static void limparTela()
 {
 #ifdef _WIN32
     system("cls");
@@ -23,7 +23,7 @@ void limparTela()
 #endif
 }
 
-void pausarTela()
+static void pausarTela()
 {
     printf("\nPressione ENTER para continuar...");
     getchar();

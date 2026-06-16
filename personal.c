@@ -5,10 +5,29 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "personal.h"
 
 Treino treinos[100];
 int totalTreinos = 0;
+
+
+
+void limparTela()
+{
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
+void pausarTela()
+{
+    printf("\nPressione ENTER para continuar...");
+    getchar();
+    getchar();
+}
 
 /**
  * @brief Cadastra um novo treino no sistema.

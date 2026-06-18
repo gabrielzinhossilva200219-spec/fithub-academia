@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação - Fithub Academia: Referência do Arquivo C:/Users/amand/Downloads/Nova pasta/fithub/fithub/testes_recepcionista.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentação - Fithub Academia<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Documentação referente ao Sistema Fithub Academia. Uma academia pública que existe em Cruzeiro-SP, na antiga ESEFIC.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('testes__recepcionista_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo testes_recepcionista.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Testes unitarios do modulo Recepcionista - FitHub Academia.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="minunit_8h_source.html">minunit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="recepcionista_8h_source.html">recepcionista.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae4a3e355a38043f7ad6e8e2f41c6ea89" id="r_ae4a3e355a38043f7ad6e8e2f41c6ea89"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">stub_validarNome_valido</a> (char nome[])</td></tr>
+<tr class="memdesc:ae4a3e355a38043f7ad6e8e2f41c6ea89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de nome sempre valida.  <br /></td></tr>
+<tr class="memitem:a34998ca212b57782d821246a06f76dd2" id="r_a34998ca212b57782d821246a06f76dd2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a34998ca212b57782d821246a06f76dd2">stub_validarNome_invalido</a> (char nome[])</td></tr>
+<tr class="memdesc:a34998ca212b57782d821246a06f76dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de nome sempre invalida.  <br /></td></tr>
+<tr class="memitem:a6b23164ad4701b358d478d5b814319d0" id="r_a6b23164ad4701b358d478d5b814319d0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a6b23164ad4701b358d478d5b814319d0">stub_validarCPF_valido</a> (char cpf[])</td></tr>
+<tr class="memdesc:a6b23164ad4701b358d478d5b814319d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de CPF sempre valida.  <br /></td></tr>
+<tr class="memitem:aa67dbeb0b65691608b5be7faa2a8efb1" id="r_aa67dbeb0b65691608b5be7faa2a8efb1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa67dbeb0b65691608b5be7faa2a8efb1">stub_validarCPF_invalido</a> (char cpf[])</td></tr>
+<tr class="memdesc:aa67dbeb0b65691608b5be7faa2a8efb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula validacao de CPF sempre invalida.  <br /></td></tr>
+<tr class="memitem:acb7835cf0a59ada767b5b9f4b64bed16" id="r_acb7835cf0a59ada767b5b9f4b64bed16"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#acb7835cf0a59ada767b5b9f4b64bed16">stub_cpfExiste_sim</a> (char cpf[])</td></tr>
+<tr class="memdesc:acb7835cf0a59ada767b5b9f4b64bed16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula que o CPF ja existe no sistema.  <br /></td></tr>
+<tr class="memitem:acbb445f854f654ea1415a9b2fabb102a" id="r_acbb445f854f654ea1415a9b2fabb102a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#acbb445f854f654ea1415a9b2fabb102a">stub_cpfExiste_nao</a> (char cpf[])</td></tr>
+<tr class="memdesc:acbb445f854f654ea1415a9b2fabb102a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula que o CPF nao existe no sistema.  <br /></td></tr>
+<tr class="memitem:ad2167c7f0a27b13b616472a1bf330b27" id="r_ad2167c7f0a27b13b616472a1bf330b27"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad2167c7f0a27b13b616472a1bf330b27">reset_recepcionista</a> ()</td></tr>
+<tr class="memitem:a4f0930dc5390ba2fb39c2542350b783d" id="r_a4f0930dc5390ba2fb39c2542350b783d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4f0930dc5390ba2fb39c2542350b783d">MU_TEST</a> (CT01_nome_valido)</td></tr>
+<tr class="memdesc:a4f0930dc5390ba2fb39c2542350b783d"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT01 - Nome valido deve ser aceito.  <br /></td></tr>
+<tr class="memitem:a5f9584a14906af7a1744faa20a62ac4e" id="r_a5f9584a14906af7a1744faa20a62ac4e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5f9584a14906af7a1744faa20a62ac4e">MU_TEST</a> (CT02_nome_vazio)</td></tr>
+<tr class="memdesc:a5f9584a14906af7a1744faa20a62ac4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT02 - Nome vazio deve ser rejeitado.  <br /></td></tr>
+<tr class="memitem:ab54ac6f8a375b66b42ba8b4b0ff48db9" id="r_ab54ac6f8a375b66b42ba8b4b0ff48db9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab54ac6f8a375b66b42ba8b4b0ff48db9">MU_TEST</a> (CT03_cpf_valido)</td></tr>
+<tr class="memdesc:ab54ac6f8a375b66b42ba8b4b0ff48db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT03 - CPF com 11 digitos deve ser aceito.  <br /></td></tr>
+<tr class="memitem:ac382b3dbb1f3b4491f34260b150909d5" id="r_ac382b3dbb1f3b4491f34260b150909d5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac382b3dbb1f3b4491f34260b150909d5">MU_TEST</a> (CT04_cpf_vazio)</td></tr>
+<tr class="memdesc:ac382b3dbb1f3b4491f34260b150909d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT04 - CPF vazio deve ser rejeitado.  <br /></td></tr>
+<tr class="memitem:abde0190fbc5871e7e24aa29bc9ed522a" id="r_abde0190fbc5871e7e24aa29bc9ed522a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#abde0190fbc5871e7e24aa29bc9ed522a">MU_TEST</a> (CT05_cpf_incompleto)</td></tr>
+<tr class="memdesc:abde0190fbc5871e7e24aa29bc9ed522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT05 - CPF com menos de 11 digitos deve ser rejeitado.  <br /></td></tr>
+<tr class="memitem:a885c096b8a1eaf8467811bcd1b6ace4f" id="r_a885c096b8a1eaf8467811bcd1b6ace4f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a885c096b8a1eaf8467811bcd1b6ace4f">MU_TEST</a> (CT06_data_valida)</td></tr>
+<tr class="memdesc:a885c096b8a1eaf8467811bcd1b6ace4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT06 - Data no formato valido deve ser aceita.  <br /></td></tr>
+<tr class="memitem:a449dc2f82aeabc1dc6857df952274222" id="r_a449dc2f82aeabc1dc6857df952274222"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a449dc2f82aeabc1dc6857df952274222">MU_TEST</a> (CT07_data_invalida)</td></tr>
+<tr class="memdesc:a449dc2f82aeabc1dc6857df952274222"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT07 - Data com dia e mes invalidos deve ser rejeitada.  <br /></td></tr>
+<tr class="memitem:a3a8f1ef9b3840750f7286381fdb7087c" id="r_a3a8f1ef9b3840750f7286381fdb7087c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3a8f1ef9b3840750f7286381fdb7087c">MU_TEST</a> (CT08_email_valido)</td></tr>
+<tr class="memdesc:a3a8f1ef9b3840750f7286381fdb7087c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT08 - Email com arroba e .com deve ser aceito.  <br /></td></tr>
+<tr class="memitem:a198827113f5c462a30c6510903a8ecc1" id="r_a198827113f5c462a30c6510903a8ecc1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a198827113f5c462a30c6510903a8ecc1">MU_TEST</a> (CT09_email_invalido)</td></tr>
+<tr class="memdesc:a198827113f5c462a30c6510903a8ecc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT09 - Email sem arroba deve ser rejeitado.  <br /></td></tr>
+<tr class="memitem:ac17f6c7d86afe1315c0e77afe64e28a7" id="r_ac17f6c7d86afe1315c0e77afe64e28a7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac17f6c7d86afe1315c0e77afe64e28a7">MU_TEST</a> (CT10_telefone_valido)</td></tr>
+<tr class="memdesc:ac17f6c7d86afe1315c0e77afe64e28a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT10 - Telefone com 11 digitos deve ser aceito.  <br /></td></tr>
+<tr class="memitem:affda923752e9540e0aad8e6257d85370" id="r_affda923752e9540e0aad8e6257d85370"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#affda923752e9540e0aad8e6257d85370">MU_TEST</a> (CT11_telefone_vazio)</td></tr>
+<tr class="memdesc:affda923752e9540e0aad8e6257d85370"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT11 - Telefone vazio deve ser rejeitado.  <br /></td></tr>
+<tr class="memitem:a18901719280f9e57ac82741277974ce7" id="r_a18901719280f9e57ac82741277974ce7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a18901719280f9e57ac82741277974ce7">MU_TEST</a> (CT12_laudo_informado)</td></tr>
+<tr class="memdesc:a18901719280f9e57ac82741277974ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT12 - Laudo informado deve ser aceito.  <br /></td></tr>
+<tr class="memitem:a3e885a4d394f917561244d60b0bdfbbb" id="r_a3e885a4d394f917561244d60b0bdfbbb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3e885a4d394f917561244d60b0bdfbbb">MU_TEST</a> (CT13_laudo_vazio)</td></tr>
+<tr class="memdesc:a3e885a4d394f917561244d60b0bdfbbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT13 - Laudo vazio deve ser rejeitado.  <br /></td></tr>
+<tr class="memitem:ac513d0cbc31991bde6d1e2be6536500a" id="r_ac513d0cbc31991bde6d1e2be6536500a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac513d0cbc31991bde6d1e2be6536500a">MU_TEST</a> (CT14_cadastro_completo)</td></tr>
+<tr class="memdesc:ac513d0cbc31991bde6d1e2be6536500a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT14 - Cadastro completo com todos os campos validos.  <br /></td></tr>
+<tr class="memitem:a84e5cf6fe3513e21ab2992a872c471c8" id="r_a84e5cf6fe3513e21ab2992a872c471c8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a84e5cf6fe3513e21ab2992a872c471c8">MU_TEST</a> (CT15_cpf_duplicado)</td></tr>
+<tr class="memdesc:a84e5cf6fe3513e21ab2992a872c471c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">CT15 - CPF duplicado deve ser detectado.  <br /></td></tr>
+<tr class="memitem:a8820d0a168fae5168f711cb39866faef" id="r_a8820d0a168fae5168f711cb39866faef"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8820d0a168fae5168f711cb39866faef">MU_TEST_SUITE</a> (suite_recepcionista)</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:aafb4ed7bbd7ebee347ea0c99cf7790a5" id="r_aafb4ed7bbd7ebee347ea0c99cf7790a5"><td class="memItemLeft"><a class="el" href="struct_aluno.html">Aluno</a>&#160;</td><td class="memItemRight"><a class="el" href="#aafb4ed7bbd7ebee347ea0c99cf7790a5">alunos</a> []</td></tr>
+<tr class="memitem:ab4fab09132ef3513b5693bade7f94958" id="r_ab4fab09132ef3513b5693bade7f94958"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Testes unitarios do modulo Recepcionista - FitHub Academia. </p>
+<p>Utiliza stubs para simular dependencias e isolar as funcoes testadas de efeitos colaterais externos. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  163</span>           {</div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_define" href="minunit_8h.html#a686f0ed4e3fb8ffd9687895b3a1de7f7">MU_RUN_SUITE</a>(suite_recepcionista);</div>
+<div class="line"><span class="lineno">  165</span>    <a class="code hl_define" href="minunit_8h.html#a34507ed892909d3f420ebe93a6ad9975">MU_REPORT</a>();</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="minunit_8h.html#afa40e44f2c8a0afb36acface769ab13d">MU_EXIT_CODE</a>;</div>
+<div class="line"><span class="lineno">  167</span>}</div>
+<div class="ttc" id="aminunit_8h_html_a34507ed892909d3f420ebe93a6ad9975"><div class="ttname"><a href="minunit_8h.html#a34507ed892909d3f420ebe93a6ad9975">MU_REPORT</a></div><div class="ttdeci">#define MU_REPORT()</div><div class="ttdef"><b>Definição</b> minunit.h:131</div></div>
+<div class="ttc" id="aminunit_8h_html_a686f0ed4e3fb8ffd9687895b3a1de7f7"><div class="ttname"><a href="minunit_8h.html#a686f0ed4e3fb8ffd9687895b3a1de7f7">MU_RUN_SUITE</a></div><div class="ttdeci">#define MU_RUN_SUITE(suite_name)</div><div class="ttdef"><b>Definição</b> minunit.h:99</div></div>
+<div class="ttc" id="aminunit_8h_html_afa40e44f2c8a0afb36acface769ab13d"><div class="ttname"><a href="minunit_8h.html#afa40e44f2c8a0afb36acface769ab13d">MU_EXIT_CODE</a></div><div class="ttdeci">#define MU_EXIT_CODE</div><div class="ttdef"><b>Definição</b> minunit.h:141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4f0930dc5390ba2fb39c2542350b783d" name="a4f0930dc5390ba2fb39c2542350b783d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f0930dc5390ba2fb39c2542350b783d">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[1/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT01_nome_valido</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT01 - Nome valido deve ser aceito. </p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                          {</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aaf9d711034b463532a0d9fc0bd2272c8">validarNome</a>(<span class="stringliteral">&quot;Julia Pereira&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   49</span>}</div>
+<div class="ttc" id="aminunit_8h_html_ad8ca133baa1f0f576239631f37790b2b"><div class="ttname"><a href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a></div><div class="ttdeci">#define mu_check(test)</div><div class="ttdef"><b>Definição</b> minunit.h:144</div></div>
+<div class="ttc" id="arecepcionista_8c_html_aaf9d711034b463532a0d9fc0bd2272c8"><div class="ttname"><a href="recepcionista_8c.html#aaf9d711034b463532a0d9fc0bd2272c8">validarNome</a></div><div class="ttdeci">int validarNome(char nome[])</div><div class="ttdoc">Valida se o nome nao e vazio.</div><div class="ttdef"><b>Definição</b> recepcionista.c:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5f9584a14906af7a1744faa20a62ac4e" name="a5f9584a14906af7a1744faa20a62ac4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9584a14906af7a1744faa20a62ac4e">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[2/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT02_nome_vazio</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT02 - Nome vazio deve ser rejeitado. </p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                         {</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aaf9d711034b463532a0d9fc0bd2272c8">validarNome</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab54ac6f8a375b66b42ba8b4b0ff48db9" name="ab54ac6f8a375b66b42ba8b4b0ff48db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54ac6f8a375b66b42ba8b4b0ff48db9">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[3/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT03_cpf_valido</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT03 - CPF com 11 digitos deve ser aceito. </p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                         {</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a>(<span class="stringliteral">&quot;12345678900&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   59</span>}</div>
+<div class="ttc" id="arecepcionista_8c_html_afcdbaa17370f54b6acc8a2c0c82a8044"><div class="ttname"><a href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a></div><div class="ttdeci">int validarCPF(char cpf[])</div><div class="ttdoc">Valida se o CPF possui exatamente 11 digitos.</div><div class="ttdef"><b>Definição</b> recepcionista.c:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac382b3dbb1f3b4491f34260b150909d5" name="ac382b3dbb1f3b4491f34260b150909d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac382b3dbb1f3b4491f34260b150909d5">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[4/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT04_cpf_vazio</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT04 - CPF vazio deve ser rejeitado. </p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>                        {</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abde0190fbc5871e7e24aa29bc9ed522a" name="abde0190fbc5871e7e24aa29bc9ed522a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde0190fbc5871e7e24aa29bc9ed522a">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[5/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT05_cpf_incompleto</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT05 - CPF com menos de 11 digitos deve ser rejeitado. </p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                             {</div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afcdbaa17370f54b6acc8a2c0c82a8044">validarCPF</a>(<span class="stringliteral">&quot;123&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   69</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a885c096b8a1eaf8467811bcd1b6ace4f" name="a885c096b8a1eaf8467811bcd1b6ace4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885c096b8a1eaf8467811bcd1b6ace4f">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[6/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT06_data_valida</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT06 - Data no formato valido deve ser aceita. </p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                          {</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a>(<span class="stringliteral">&quot;10/10/2000&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="arecepcionista_8c_html_afe2ffb2e12eaca587dd3a24a2b60ccf4"><div class="ttname"><a href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a></div><div class="ttdeci">int validarData(char data[])</div><div class="ttdoc">Valida se a data esta no formato dd/mm/aaaa com valores coerentes.</div><div class="ttdef"><b>Definição</b> recepcionista.c:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a449dc2f82aeabc1dc6857df952274222" name="a449dc2f82aeabc1dc6857df952274222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449dc2f82aeabc1dc6857df952274222">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[7/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT07_data_invalida</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT07 - Data com dia e mes invalidos deve ser rejeitada. </p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                            {</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a>(<span class="stringliteral">&quot;99/99/9999&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3a8f1ef9b3840750f7286381fdb7087c" name="a3a8f1ef9b3840750f7286381fdb7087c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a8f1ef9b3840750f7286381fdb7087c">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[8/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT08_email_valido</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT08 - Email com arroba e .com deve ser aceito. </p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                           {</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a>(<span class="stringliteral">&quot;juliapereirateste@gmail.com&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   84</span>}</div>
+<div class="ttc" id="arecepcionista_8c_html_aa67d7c01198e713a7ded6d8f8edc834e"><div class="ttname"><a href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a></div><div class="ttdeci">int validarEmail(char email[])</div><div class="ttdoc">Valida se o email contem &#39;@&#39; e &#39;.com&#39;.</div><div class="ttdef"><b>Definição</b> recepcionista.c:60</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a198827113f5c462a30c6510903a8ecc1" name="a198827113f5c462a30c6510903a8ecc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198827113f5c462a30c6510903a8ecc1">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[9/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT09_email_invalido</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT09 - Email sem arroba deve ser rejeitado. </p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                             {</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a>(<span class="stringliteral">&quot;juliapereirateste.com&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   89</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac17f6c7d86afe1315c0e77afe64e28a7" name="ac17f6c7d86afe1315c0e77afe64e28a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac17f6c7d86afe1315c0e77afe64e28a7">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[10/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT10_telefone_valido</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT10 - Telefone com 11 digitos deve ser aceito. </p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>                              {</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a>(<span class="stringliteral">&quot;11999999999&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+<div class="ttc" id="arecepcionista_8c_html_a253181316d586d04c4a5a4bf15b917f4"><div class="ttname"><a href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a></div><div class="ttdeci">int validarTelefone(char telefone[])</div><div class="ttdoc">Valida se o telefone possui exatamente 11 digitos.</div><div class="ttdef"><b>Definição</b> recepcionista.c:71</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="affda923752e9540e0aad8e6257d85370" name="affda923752e9540e0aad8e6257d85370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affda923752e9540e0aad8e6257d85370">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[11/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT11_telefone_vazio</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT11 - Telefone vazio deve ser rejeitado. </p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>                             {</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   99</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a18901719280f9e57ac82741277974ce7" name="a18901719280f9e57ac82741277974ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18901719280f9e57ac82741277974ce7">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[12/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT12_laudo_informado</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT12 - Laudo informado deve ser aceito. </p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>                              {</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a>(<span class="stringliteral">&quot;Apto&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">  104</span>}</div>
+<div class="ttc" id="arecepcionista_8c_html_a2e2ea0a75e84c9355ccddc35363e6e02"><div class="ttname"><a href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a></div><div class="ttdeci">int validarLaudo(char laudo[])</div><div class="ttdoc">Valida se o laudo medico nao e vazio.</div><div class="ttdef"><b>Definição</b> recepcionista.c:81</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e885a4d394f917561244d60b0bdfbbb" name="a3e885a4d394f917561244d60b0bdfbbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e885a4d394f917561244d60b0bdfbbb">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[13/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT13_laudo_vazio</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT13 - Laudo vazio deve ser rejeitado. </p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                          {</div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac513d0cbc31991bde6d1e2be6536500a" name="ac513d0cbc31991bde6d1e2be6536500a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac513d0cbc31991bde6d1e2be6536500a">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[14/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT14_cadastro_completo</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT14 - Cadastro completo com todos os campos validos. </p>
+<p>Usa stubs para simular que todas as validacoes passam. </p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>                                {</div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_function" href="#ad2167c7f0a27b13b616472a1bf330b27">reset_recepcionista</a>();</div>
+<div class="line"><span class="lineno">  117</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].nome, <span class="stringliteral">&quot;Julia Pereira&quot;</span>);</div>
+<div class="line"><span class="lineno">  118</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].cpf, <span class="stringliteral">&quot;12345678900&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].dataNascimento, <span class="stringliteral">&quot;10/10/2000&quot;</span>);</div>
+<div class="line"><span class="lineno">  120</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].email, <span class="stringliteral">&quot;juliapereirateste@gmail.com&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].telefone, <span class="stringliteral">&quot;11999999999&quot;</span>);</div>
+<div class="line"><span class="lineno">  122</span>    strcpy(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].laudo, <span class="stringliteral">&quot;Apto&quot;</span>);</div>
+<div class="line"><span class="lineno">  123</span>    <a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].faltas = 0;</div>
+<div class="line"><span class="lineno">  124</span>    <a class="code hl_variable" href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a> = 1;</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">stub_validarNome_valido</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].nome) == 1);</div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#a6b23164ad4701b358d478d5b814319d0">stub_validarCPF_valido</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].cpf) == 1);</div>
+<div class="line"><span class="lineno">  128</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#afe2ffb2e12eaca587dd3a24a2b60ccf4">validarData</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].dataNascimento) == 1);</div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#aa67d7c01198e713a7ded6d8f8edc834e">validarEmail</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].email) == 1);</div>
+<div class="line"><span class="lineno">  130</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a253181316d586d04c4a5a4bf15b917f4">validarTelefone</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].telefone) == 1);</div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="recepcionista_8c.html#a2e2ea0a75e84c9355ccddc35363e6e02">validarLaudo</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].laudo) == 1);</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#acbb445f854f654ea1415a9b2fabb102a">stub_cpfExiste_nao</a>(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>[0].cpf) == 0);</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_variable" href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a> == 1);</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+<div class="ttc" id="arecepcionista_8c_html_a87e899a5d73fa6d88ae16c3131f18457"><div class="ttname"><a href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a></div><div class="ttdeci">Aluno alunos[MAX_ALUNOS]</div><div class="ttdef"><b>Definição</b> recepcionista.c:11</div></div>
+<div class="ttc" id="arecepcionista_8c_html_ab4fab09132ef3513b5693bade7f94958"><div class="ttname"><a href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a></div><div class="ttdeci">int totalAlunos</div><div class="ttdef"><b>Definição</b> recepcionista.c:12</div></div>
+<div class="ttc" id="atestes__recepcionista_8c_html_a6b23164ad4701b358d478d5b814319d0"><div class="ttname"><a href="#a6b23164ad4701b358d478d5b814319d0">stub_validarCPF_valido</a></div><div class="ttdeci">int stub_validarCPF_valido(char cpf[])</div><div class="ttdoc">Stub: simula validacao de CPF sempre valida.</div><div class="ttdef"><b>Definição</b> testes_recepcionista.c:26</div></div>
+<div class="ttc" id="atestes__recepcionista_8c_html_acbb445f854f654ea1415a9b2fabb102a"><div class="ttname"><a href="#acbb445f854f654ea1415a9b2fabb102a">stub_cpfExiste_nao</a></div><div class="ttdeci">int stub_cpfExiste_nao(char cpf[])</div><div class="ttdoc">Stub: simula que o CPF nao existe no sistema.</div><div class="ttdef"><b>Definição</b> testes_recepcionista.c:35</div></div>
+<div class="ttc" id="atestes__recepcionista_8c_html_ad2167c7f0a27b13b616472a1bf330b27"><div class="ttname"><a href="#ad2167c7f0a27b13b616472a1bf330b27">reset_recepcionista</a></div><div class="ttdeci">void reset_recepcionista()</div><div class="ttdef"><b>Definição</b> testes_recepcionista.c:39</div></div>
+<div class="ttc" id="atestes__recepcionista_8c_html_ae4a3e355a38043f7ad6e8e2f41c6ea89"><div class="ttname"><a href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">stub_validarNome_valido</a></div><div class="ttdeci">int stub_validarNome_valido(char nome[])</div><div class="ttdoc">Stub: simula validacao de nome sempre valida.</div><div class="ttdef"><b>Definição</b> testes_recepcionista.c:20</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a84e5cf6fe3513e21ab2992a872c471c8" name="a84e5cf6fe3513e21ab2992a872c471c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e5cf6fe3513e21ab2992a872c471c8">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[15/15]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">CT15_cpf_duplicado</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CT15 - CPF duplicado deve ser detectado. </p>
+<p>Usa stub_cpfExiste_sim para simular CPF ja existente. </p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>                            {</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_function" href="#ad2167c7f0a27b13b616472a1bf330b27">reset_recepcionista</a>();</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#acb7835cf0a59ada767b5b9f4b64bed16">stub_cpfExiste_sim</a>(<span class="stringliteral">&quot;12345678900&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">  143</span>}</div>
+<div class="ttc" id="atestes__recepcionista_8c_html_acb7835cf0a59ada767b5b9f4b64bed16"><div class="ttname"><a href="#acb7835cf0a59ada767b5b9f4b64bed16">stub_cpfExiste_sim</a></div><div class="ttdeci">int stub_cpfExiste_sim(char cpf[])</div><div class="ttdoc">Stub: simula que o CPF ja existe no sistema.</div><div class="ttdef"><b>Definição</b> testes_recepcionista.c:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8820d0a168fae5168f711cb39866faef" name="a8820d0a168fae5168f711cb39866faef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8820d0a168fae5168f711cb39866faef">&#9670;&#160;</a></span>MU_TEST_SUITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST_SUITE </td>
+          <td>(</td>
+          <td class="paramtype">suite_recepcionista</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  145</span>                                   {</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT01_nome_valido);</div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT02_nome_vazio);</div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT03_cpf_valido);</div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT04_cpf_vazio);</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT05_cpf_incompleto);</div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT06_data_valida);</div>
+<div class="line"><span class="lineno">  152</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT07_data_invalida);</div>
+<div class="line"><span class="lineno">  153</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT08_email_valido);</div>
+<div class="line"><span class="lineno">  154</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT09_email_invalido);</div>
+<div class="line"><span class="lineno">  155</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT10_telefone_valido);</div>
+<div class="line"><span class="lineno">  156</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT11_telefone_vazio);</div>
+<div class="line"><span class="lineno">  157</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT12_laudo_informado);</div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT13_laudo_vazio);</div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT14_cadastro_completo);</div>
+<div class="line"><span class="lineno">  160</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(CT15_cpf_duplicado);</div>
+<div class="line"><span class="lineno">  161</span>}</div>
+<div class="ttc" id="aminunit_8h_html_acef7e3a7858368882ef2b560be0d10bb"><div class="ttname"><a href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a></div><div class="ttdeci">#define MU_RUN_TEST(test)</div><div class="ttdef"><b>Definição</b> minunit.h:112</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad2167c7f0a27b13b616472a1bf330b27" name="ad2167c7f0a27b13b616472a1bf330b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2167c7f0a27b13b616472a1bf330b27">&#9670;&#160;</a></span>reset_recepcionista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset_recepcionista </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                           {</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_variable" href="recepcionista_8c.html#ab4fab09132ef3513b5693bade7f94958">totalAlunos</a> = 0;</div>
+<div class="line"><span class="lineno">   41</span>    memset(<a class="code hl_variable" href="recepcionista_8c.html#a87e899a5d73fa6d88ae16c3131f18457">alunos</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct_aluno.html">Aluno</a>) * <a class="code hl_define" href="recepcionista_8h.html#afabe40c988deb46665abf62cf618393d">MAX_ALUNOS</a>);</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+<div class="ttc" id="arecepcionista_8h_html_afabe40c988deb46665abf62cf618393d"><div class="ttname"><a href="recepcionista_8h.html#afabe40c988deb46665abf62cf618393d">MAX_ALUNOS</a></div><div class="ttdeci">#define MAX_ALUNOS</div><div class="ttdef"><b>Definição</b> recepcionista.h:6</div></div>
+<div class="ttc" id="astruct_aluno_html"><div class="ttname"><a href="struct_aluno.html">Aluno</a></div><div class="ttdoc">Estrutura que representa um aluno cadastrado no sistema.</div><div class="ttdef"><b>Definição</b> recepcionista.h:12</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbb445f854f654ea1415a9b2fabb102a" name="acbb445f854f654ea1415a9b2fabb102a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb445f854f654ea1415a9b2fabb102a">&#9670;&#160;</a></span>stub_cpfExiste_nao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_cpfExiste_nao </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula que o CPF nao existe no sistema. </p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{ <span class="keywordflow">return</span> 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb7835cf0a59ada767b5b9f4b64bed16" name="acb7835cf0a59ada767b5b9f4b64bed16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7835cf0a59ada767b5b9f4b64bed16">&#9670;&#160;</a></span>stub_cpfExiste_sim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_cpfExiste_sim </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula que o CPF ja existe no sistema. </p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> 1; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa67dbeb0b65691608b5be7faa2a8efb1" name="aa67dbeb0b65691608b5be7faa2a8efb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67dbeb0b65691608b5be7faa2a8efb1">&#9670;&#160;</a></span>stub_validarCPF_invalido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarCPF_invalido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de CPF sempre invalida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{ <span class="keywordflow">return</span> 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6b23164ad4701b358d478d5b814319d0" name="a6b23164ad4701b358d478d5b814319d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b23164ad4701b358d478d5b814319d0">&#9670;&#160;</a></span>stub_validarCPF_valido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarCPF_valido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>cpf</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de CPF sempre valida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{ <span class="keywordflow">return</span> 1; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a34998ca212b57782d821246a06f76dd2" name="a34998ca212b57782d821246a06f76dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34998ca212b57782d821246a06f76dd2">&#9670;&#160;</a></span>stub_validarNome_invalido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarNome_invalido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de nome sempre invalida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{ <span class="keywordflow">return</span> 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4a3e355a38043f7ad6e8e2f41c6ea89" name="ae4a3e355a38043f7ad6e8e2f41c6ea89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a3e355a38043f7ad6e8e2f41c6ea89">&#9670;&#160;</a></span>stub_validarNome_valido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarNome_valido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula validacao de nome sempre valida. </p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{ <span class="keywordflow">return</span> 1; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="aafb4ed7bbd7ebee347ea0c99cf7790a5" name="aafb4ed7bbd7ebee347ea0c99cf7790a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb4ed7bbd7ebee347ea0c99cf7790a5">&#9670;&#160;</a></span>alunos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_aluno.html">Aluno</a> alunos[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4fab09132ef3513b5693bade7f94958" name="ab4fab09132ef3513b5693bade7f94958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fab09132ef3513b5693bade7f94958">&#9670;&#160;</a></span>totalAlunos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int totalAlunos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a href="dir_520eca1800aac1aa0d4ca86111d672d4.html">Nova pasta</a></li><li class="navelem"><a href="dir_d31dfc16b169c6649fc06b8feb9a8484.html">fithub</a></li><li class="navelem"><a href="dir_00853a88518263942b57d346077a82e4.html">fithub</a></li><li class="navelem"><a href="testes__recepcionista_8c.html">testes_recepcionista.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

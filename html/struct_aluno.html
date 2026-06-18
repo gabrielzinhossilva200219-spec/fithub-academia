@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação - Fithub Academia: Referência da Estrutura Aluno</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentação - Fithub Academia<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Documentação referente ao Sistema Fithub Academia. Uma academia pública que existe em Cruzeiro-SP, na antiga ESEFIC.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_aluno.html','','struct_aluno-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência da Estrutura Aluno</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Estrutura que representa um aluno cadastrado no sistema.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="recepcionista_8h_source.html">recepcionista.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos Públicos</h2></td></tr>
+<tr class="memitem:ab1953907d90d71c261b355c33a698c38" id="r_ab1953907d90d71c261b355c33a698c38"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#ab1953907d90d71c261b355c33a698c38">nome</a> [100]</td></tr>
+<tr class="memitem:a4badb773a304045d647df261e8e3d357" id="r_a4badb773a304045d647df261e8e3d357"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a4badb773a304045d647df261e8e3d357">cpf</a> [12]</td></tr>
+<tr class="memitem:ae8b36cf33751e98d18f264f0fe8ea395" id="r_ae8b36cf33751e98d18f264f0fe8ea395"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#ae8b36cf33751e98d18f264f0fe8ea395">dataNascimento</a> [11]</td></tr>
+<tr class="memitem:afb3d48402a23bcde8941e6f3112e2d7d" id="r_afb3d48402a23bcde8941e6f3112e2d7d"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#afb3d48402a23bcde8941e6f3112e2d7d">email</a> [100]</td></tr>
+<tr class="memitem:a03038b81677a0df95b273fd975e98356" id="r_a03038b81677a0df95b273fd975e98356"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#a03038b81677a0df95b273fd975e98356">telefone</a> [12]</td></tr>
+<tr class="memitem:ad2777050eef594afdfbbeffaf6a9559f" id="r_ad2777050eef594afdfbbeffaf6a9559f"><td class="memItemLeft">char&#160;</td><td class="memItemRight"><a class="el" href="#ad2777050eef594afdfbbeffaf6a9559f">laudo</a> [50]</td></tr>
+<tr class="memitem:a36afc8fd74be5bc44a78396453bb9b48" id="r_a36afc8fd74be5bc44a78396453bb9b48"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a36afc8fd74be5bc44a78396453bb9b48">faltas</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Estrutura que representa um aluno cadastrado no sistema. </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Atributos</h2>
+<a id="a4badb773a304045d647df261e8e3d357" name="a4badb773a304045d647df261e8e3d357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4badb773a304045d647df261e8e3d357">&#9670;&#160;</a></span>cpf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Aluno::cpf[12]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CPF do aluno (11 digitos sem pontuacao) </p>
+
+</div>
+</div>
+<a id="ae8b36cf33751e98d18f264f0fe8ea395" name="ae8b36cf33751e98d18f264f0fe8ea395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b36cf33751e98d18f264f0fe8ea395">&#9670;&#160;</a></span>dataNascimento</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Aluno::dataNascimento[11]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Data de nascimento no formato dd/mm/aaaa </p>
+
+</div>
+</div>
+<a id="afb3d48402a23bcde8941e6f3112e2d7d" name="afb3d48402a23bcde8941e6f3112e2d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3d48402a23bcde8941e6f3112e2d7d">&#9670;&#160;</a></span>email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Aluno::email[100]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Endereco de email do aluno </p>
+
+</div>
+</div>
+<a id="a36afc8fd74be5bc44a78396453bb9b48" name="a36afc8fd74be5bc44a78396453bb9b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36afc8fd74be5bc44a78396453bb9b48">&#9670;&#160;</a></span>faltas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Aluno::faltas</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contador de faltas do aluno </p>
+
+</div>
+</div>
+<a id="ad2777050eef594afdfbbeffaf6a9559f" name="ad2777050eef594afdfbbeffaf6a9559f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2777050eef594afdfbbeffaf6a9559f">&#9670;&#160;</a></span>laudo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Aluno::laudo[50]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Laudo medico do aluno </p>
+
+</div>
+</div>
+<a id="ab1953907d90d71c261b355c33a698c38" name="ab1953907d90d71c261b355c33a698c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1953907d90d71c261b355c33a698c38">&#9670;&#160;</a></span>nome</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Aluno::nome[100]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Nome completo do aluno </p>
+
+</div>
+</div>
+<a id="a03038b81677a0df95b273fd975e98356" name="a03038b81677a0df95b273fd975e98356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03038b81677a0df95b273fd975e98356">&#9670;&#160;</a></span>telefone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Aluno::telefone[12]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Telefone com DDD (11 digitos) </p>
+
+</div>
+</div>
+<hr/>A documentação para essa estrutura foi gerada a partir do seguinte arquivo:<ul>
+<li>C:/Users/amand/Downloads/Nova pasta/fithub/fithub/<a class="el" href="recepcionista_8h_source.html">recepcionista.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_aluno.html">Aluno</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

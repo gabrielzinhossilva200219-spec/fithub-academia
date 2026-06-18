@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação - Fithub Academia: Referência do Arquivo C:/Users/amand/Downloads/Nova pasta/fithub/fithub/testes_gerente.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentação - Fithub Academia<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Documentação referente ao Sistema Fithub Academia. Uma academia pública que existe em Cruzeiro-SP, na antiga ESEFIC.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('testes__gerente_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo testes_gerente.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Testes unitarios do modulo Gerente - FitHub Academia.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="minunit_8h_source.html">minunit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gerente_8h_source.html">gerente.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a08f1db914b3b9722e38d7ca5aa82dc2a" id="r_a08f1db914b3b9722e38d7ca5aa82dc2a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a08f1db914b3b9722e38d7ca5aa82dc2a">stub_validarNomeFuncionario_valido</a> (char nome[])</td></tr>
+<tr class="memdesc:a08f1db914b3b9722e38d7ca5aa82dc2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula nome de funcionario sempre valido (nao vazio).  <br /></td></tr>
+<tr class="memitem:a7237192891d8e6a8243a04a26f3deec8" id="r_a7237192891d8e6a8243a04a26f3deec8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7237192891d8e6a8243a04a26f3deec8">stub_validarNomeFuncionario_invalido</a> (char nome[])</td></tr>
+<tr class="memdesc:a7237192891d8e6a8243a04a26f3deec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub: simula nome de funcionario invalido (vazio).  <br /></td></tr>
+<tr class="memitem:abd1232a4e9f1fb1b1856049eefe7bc7a" id="r_abd1232a4e9f1fb1b1856049eefe7bc7a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a> ()</td></tr>
+<tr class="memitem:acb99ccc48a7d85264f95c95134353d52" id="r_acb99ccc48a7d85264f95c95134353d52"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acb99ccc48a7d85264f95c95134353d52">MU_TEST</a> (GT01_total_funcionarios_inicial_zero)</td></tr>
+<tr class="memdesc:acb99ccc48a7d85264f95c95134353d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT01 - Total de funcionarios comeca em zero apos reset.  <br /></td></tr>
+<tr class="memitem:a22543145a6067265d97e62a310990f96" id="r_a22543145a6067265d97e62a310990f96"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a22543145a6067265d97e62a310990f96">MU_TEST</a> (GT02_cargo_recepcionista_correto)</td></tr>
+<tr class="memdesc:a22543145a6067265d97e62a310990f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT02 - Cadastro de recepcionista define cargo corretamente.  <br /></td></tr>
+<tr class="memitem:aaac80b9202ec0346b5106e9a8a74e289" id="r_aaac80b9202ec0346b5106e9a8a74e289"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaac80b9202ec0346b5106e9a8a74e289">MU_TEST</a> (GT03_cargo_personal_correto)</td></tr>
+<tr class="memdesc:aaac80b9202ec0346b5106e9a8a74e289"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT03 - Cadastro de personal trainer define cargo corretamente.  <br /></td></tr>
+<tr class="memitem:a3e9dc3d43ac0df9a77130a1b83fb8744" id="r_a3e9dc3d43ac0df9a77130a1b83fb8744"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3e9dc3d43ac0df9a77130a1b83fb8744">MU_TEST</a> (GT04_nome_funcionario_correto)</td></tr>
+<tr class="memdesc:a3e9dc3d43ac0df9a77130a1b83fb8744"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT04 - Nome do funcionario e armazenado corretamente.  <br /></td></tr>
+<tr class="memitem:a6b30d013ee3cc567b38cd3c68ab2f173" id="r_a6b30d013ee3cc567b38cd3c68ab2f173"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6b30d013ee3cc567b38cd3c68ab2f173">MU_TEST</a> (GT05_limite_maximo_funcionarios)</td></tr>
+<tr class="memdesc:a6b30d013ee3cc567b38cd3c68ab2f173"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT05 - Limite maximo de funcionarios e respeitado.  <br /></td></tr>
+<tr class="memitem:ab89aaa8b35e63047317151133f6ff1cc" id="r_ab89aaa8b35e63047317151133f6ff1cc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab89aaa8b35e63047317151133f6ff1cc">MU_TEST</a> (GT06_nome_funcionario_vazio_invalido)</td></tr>
+<tr class="memdesc:ab89aaa8b35e63047317151133f6ff1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT06 - Nome vazio de funcionario deve ser rejeitado pelo stub.  <br /></td></tr>
+<tr class="memitem:af7ad0c63f2b300a4ade7919ba61554d3" id="r_af7ad0c63f2b300a4ade7919ba61554d3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af7ad0c63f2b300a4ade7919ba61554d3">MU_TEST</a> (GT07_nome_funcionario_valido)</td></tr>
+<tr class="memdesc:af7ad0c63f2b300a4ade7919ba61554d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT07 - Nome preenchido de funcionario deve ser aceito pelo stub.  <br /></td></tr>
+<tr class="memitem:afe2f1ed65cd585aa568cfc39d8925aeb" id="r_afe2f1ed65cd585aa568cfc39d8925aeb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afe2f1ed65cd585aa568cfc39d8925aeb">MU_TEST</a> (GT08_dois_funcionarios_cargos_distintos)</td></tr>
+<tr class="memdesc:afe2f1ed65cd585aa568cfc39d8925aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT08 - Dois funcionarios com cargos distintos podem coexistir.  <br /></td></tr>
+<tr class="memitem:a785ec93b3d391fad983b37ea3a622a9c" id="r_a785ec93b3d391fad983b37ea3a622a9c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a785ec93b3d391fad983b37ea3a622a9c">MU_TEST</a> (GT09_cadastro_incrementa_total)</td></tr>
+<tr class="memdesc:a785ec93b3d391fad983b37ea3a622a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT09 - Cadastro de funcionario incrementa o total corretamente.  <br /></td></tr>
+<tr class="memitem:a6704b8ad9ffcd96ecc55298423930991" id="r_a6704b8ad9ffcd96ecc55298423930991"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6704b8ad9ffcd96ecc55298423930991">MU_TEST</a> (GT10_reset_limpa_funcionarios)</td></tr>
+<tr class="memdesc:a6704b8ad9ffcd96ecc55298423930991"><td class="mdescLeft">&#160;</td><td class="mdescRight">GT10 - Apos reset, array de funcionarios esta vazio.  <br /></td></tr>
+<tr class="memitem:acfd339aa2d8af2f3d0fd13458ff3e0da" id="r_acfd339aa2d8af2f3d0fd13458ff3e0da"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acfd339aa2d8af2f3d0fd13458ff3e0da">MU_TEST_SUITE</a> (suite_gerente)</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:ac320da4b3bca9b4068ba286b7cf63650" id="r_ac320da4b3bca9b4068ba286b7cf63650"><td class="memItemLeft"><a class="el" href="struct_funcionario.html">Funcionario</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac320da4b3bca9b4068ba286b7cf63650">funcionarios</a> []</td></tr>
+<tr class="memitem:ab3909b3f23c4992324e45b5a7c0f83fb" id="r_ab3909b3f23c4992324e45b5a7c0f83fb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Testes unitarios do modulo Gerente - FitHub Academia. </p>
+<p>Utiliza stubs para simular dependencias e isolar as funcoes testadas de efeitos colaterais externos. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Funções</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  149</span>           {</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_define" href="minunit_8h.html#a686f0ed4e3fb8ffd9687895b3a1de7f7">MU_RUN_SUITE</a>(suite_gerente);</div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_define" href="minunit_8h.html#a34507ed892909d3f420ebe93a6ad9975">MU_REPORT</a>();</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="minunit_8h.html#afa40e44f2c8a0afb36acface769ab13d">MU_EXIT_CODE</a>;</div>
+<div class="line"><span class="lineno">  153</span>}</div>
+<div class="ttc" id="aminunit_8h_html_a34507ed892909d3f420ebe93a6ad9975"><div class="ttname"><a href="minunit_8h.html#a34507ed892909d3f420ebe93a6ad9975">MU_REPORT</a></div><div class="ttdeci">#define MU_REPORT()</div><div class="ttdef"><b>Definição</b> minunit.h:131</div></div>
+<div class="ttc" id="aminunit_8h_html_a686f0ed4e3fb8ffd9687895b3a1de7f7"><div class="ttname"><a href="minunit_8h.html#a686f0ed4e3fb8ffd9687895b3a1de7f7">MU_RUN_SUITE</a></div><div class="ttdeci">#define MU_RUN_SUITE(suite_name)</div><div class="ttdef"><b>Definição</b> minunit.h:99</div></div>
+<div class="ttc" id="aminunit_8h_html_afa40e44f2c8a0afb36acface769ab13d"><div class="ttname"><a href="minunit_8h.html#afa40e44f2c8a0afb36acface769ab13d">MU_EXIT_CODE</a></div><div class="ttdeci">#define MU_EXIT_CODE</div><div class="ttdef"><b>Definição</b> minunit.h:141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb99ccc48a7d85264f95c95134353d52" name="acb99ccc48a7d85264f95c95134353d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb99ccc48a7d85264f95c95134353d52">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT01_total_funcionarios_inicial_zero</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT01 - Total de funcionarios comeca em zero apos reset. </p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                              {</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> == 0);</div>
+<div class="line"><span class="lineno">   40</span>}</div>
+<div class="ttc" id="agerente_8c_html_ab3909b3f23c4992324e45b5a7c0f83fb"><div class="ttname"><a href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a></div><div class="ttdeci">int totalFuncionarios</div><div class="ttdef"><b>Definição</b> gerente.c:12</div></div>
+<div class="ttc" id="aminunit_8h_html_ad8ca133baa1f0f576239631f37790b2b"><div class="ttname"><a href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a></div><div class="ttdeci">#define mu_check(test)</div><div class="ttdef"><b>Definição</b> minunit.h:144</div></div>
+<div class="ttc" id="atestes__gerente_8c_html_abd1232a4e9f1fb1b1856049eefe7bc7a"><div class="ttname"><a href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a></div><div class="ttdeci">void reset_gerente()</div><div class="ttdef"><b>Definição</b> testes_gerente.c:27</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a22543145a6067265d97e62a310990f96" name="a22543145a6067265d97e62a310990f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22543145a6067265d97e62a310990f96">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT02_cargo_recepcionista_correto</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT02 - Cadastro de recepcionista define cargo corretamente. </p>
+<p>Simula insercao manual e verifica o campo cargo. </p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                          {</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">   48</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome, <span class="stringliteral">&quot;Ana Lima&quot;</span>);</div>
+<div class="line"><span class="lineno">   49</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Recepcionista&quot;</span>);</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 1;</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(strcmp(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Recepcionista&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+<div class="ttc" id="agerente_8c_html_a4b216f6345e92f2a51e13ede844c00d1"><div class="ttname"><a href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a></div><div class="ttdeci">Funcionario funcionarios[MAX_FUNCIONARIOS]</div><div class="ttdef"><b>Definição</b> gerente.c:11</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaac80b9202ec0346b5106e9a8a74e289" name="aaac80b9202ec0346b5106e9a8a74e289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaac80b9202ec0346b5106e9a8a74e289">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT03_cargo_personal_correto</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT03 - Cadastro de personal trainer define cargo corretamente. </p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                     {</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">   59</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome, <span class="stringliteral">&quot;Carlos Silva&quot;</span>);</div>
+<div class="line"><span class="lineno">   60</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Personal Trainer&quot;</span>);</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 1;</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(strcmp(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Personal Trainer&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e9dc3d43ac0df9a77130a1b83fb8744" name="a3e9dc3d43ac0df9a77130a1b83fb8744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9dc3d43ac0df9a77130a1b83fb8744">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT04_nome_funcionario_correto</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT04 - Nome do funcionario e armazenado corretamente. </p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                                       {</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">   70</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome, <span class="stringliteral">&quot;Maria Souza&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Recepcionista&quot;</span>);</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 1;</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(strcmp(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome, <span class="stringliteral">&quot;Maria Souza&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6b30d013ee3cc567b38cd3c68ab2f173" name="a6b30d013ee3cc567b38cd3c68ab2f173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b30d013ee3cc567b38cd3c68ab2f173">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT05_limite_maximo_funcionarios</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT05 - Limite maximo de funcionarios e respeitado. </p>
+<p>Verifica que o sistema nao permite mais que MAX_FUNCIONARIOS. </p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>                                         {</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = <a class="code hl_define" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a>;</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> &gt;= <a class="code hl_define" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a>);</div>
+<div class="line"><span class="lineno">   84</span>}</div>
+<div class="ttc" id="agerente_8h_html_ae56b7e6ebd3278dc39f4c20c2e123c91"><div class="ttname"><a href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a></div><div class="ttdeci">#define MAX_FUNCIONARIOS</div><div class="ttdef"><b>Definição</b> gerente.h:4</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab89aaa8b35e63047317151133f6ff1cc" name="ab89aaa8b35e63047317151133f6ff1cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89aaa8b35e63047317151133f6ff1cc">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT06_nome_funcionario_vazio_invalido</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT06 - Nome vazio de funcionario deve ser rejeitado pelo stub. </p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>                                              {</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#a7237192891d8e6a8243a04a26f3deec8">stub_validarNomeFuncionario_invalido</a>(<span class="stringliteral">&quot;&quot;</span>) == 0);</div>
+<div class="line"><span class="lineno">   91</span>}</div>
+<div class="ttc" id="atestes__gerente_8c_html_a7237192891d8e6a8243a04a26f3deec8"><div class="ttname"><a href="#a7237192891d8e6a8243a04a26f3deec8">stub_validarNomeFuncionario_invalido</a></div><div class="ttdeci">int stub_validarNomeFuncionario_invalido(char nome[])</div><div class="ttdoc">Stub: simula nome de funcionario invalido (vazio).</div><div class="ttdef"><b>Definição</b> testes_gerente.c:23</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af7ad0c63f2b300a4ade7919ba61554d3" name="af7ad0c63f2b300a4ade7919ba61554d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7ad0c63f2b300a4ade7919ba61554d3">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT07_nome_funcionario_valido</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT07 - Nome preenchido de funcionario deve ser aceito pelo stub. </p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>                                      {</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_function" href="#a08f1db914b3b9722e38d7ca5aa82dc2a">stub_validarNomeFuncionario_valido</a>(<span class="stringliteral">&quot;Pedro Costa&quot;</span>) == 1);</div>
+<div class="line"><span class="lineno">   98</span>}</div>
+<div class="ttc" id="atestes__gerente_8c_html_a08f1db914b3b9722e38d7ca5aa82dc2a"><div class="ttname"><a href="#a08f1db914b3b9722e38d7ca5aa82dc2a">stub_validarNomeFuncionario_valido</a></div><div class="ttdeci">int stub_validarNomeFuncionario_valido(char nome[])</div><div class="ttdoc">Stub: simula nome de funcionario sempre valido (nao vazio).</div><div class="ttdef"><b>Definição</b> testes_gerente.c:20</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afe2f1ed65cd585aa568cfc39d8925aeb" name="afe2f1ed65cd585aa568cfc39d8925aeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe2f1ed65cd585aa568cfc39d8925aeb">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT08_dois_funcionarios_cargos_distintos</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT08 - Dois funcionarios com cargos distintos podem coexistir. </p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>                                                 {</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">  105</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome, <span class="stringliteral">&quot;Ana Lima&quot;</span>);</div>
+<div class="line"><span class="lineno">  106</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Recepcionista&quot;</span>);</div>
+<div class="line"><span class="lineno">  107</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[1].nome, <span class="stringliteral">&quot;Carlos Silva&quot;</span>);</div>
+<div class="line"><span class="lineno">  108</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[1].cargo, <span class="stringliteral">&quot;Personal Trainer&quot;</span>);</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 2;</div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(strcmp(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[1].cargo) != 0);</div>
+<div class="line"><span class="lineno">  111</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a785ec93b3d391fad983b37ea3a622a9c" name="a785ec93b3d391fad983b37ea3a622a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785ec93b3d391fad983b37ea3a622a9c">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT09_cadastro_incrementa_total</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT09 - Cadastro de funcionario incrementa o total corretamente. </p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>                                        {</div>
+<div class="line"><span class="lineno">  117</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">  118</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome, <span class="stringliteral">&quot;Julia Pereira&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Recepcionista&quot;</span>);</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 1;</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> == 1);</div>
+<div class="line"><span class="lineno">  122</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6704b8ad9ffcd96ecc55298423930991" name="a6704b8ad9ffcd96ecc55298423930991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6704b8ad9ffcd96ecc55298423930991">&#9670;&#160;</a></span>MU_TEST() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST </td>
+          <td>(</td>
+          <td class="paramtype">GT10_reset_limpa_funcionarios</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GT10 - Apos reset, array de funcionarios esta vazio. </p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>                                       {</div>
+<div class="line"><span class="lineno">  128</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome, <span class="stringliteral">&quot;Alguem&quot;</span>);</div>
+<div class="line"><span class="lineno">  129</span>    strcpy(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].cargo, <span class="stringliteral">&quot;Recepcionista&quot;</span>);</div>
+<div class="line"><span class="lineno">  130</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 1;</div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_function" href="#abd1232a4e9f1fb1b1856049eefe7bc7a">reset_gerente</a>();</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(<a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> == 0);</div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_define" href="minunit_8h.html#ad8ca133baa1f0f576239631f37790b2b">mu_check</a>(strlen(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>[0].nome) == 0);</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acfd339aa2d8af2f3d0fd13458ff3e0da" name="acfd339aa2d8af2f3d0fd13458ff3e0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd339aa2d8af2f3d0fd13458ff3e0da">&#9670;&#160;</a></span>MU_TEST_SUITE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MU_TEST_SUITE </td>
+          <td>(</td>
+          <td class="paramtype">suite_gerente</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  136</span>                             {</div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT01_total_funcionarios_inicial_zero);</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT02_cargo_recepcionista_correto);</div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT03_cargo_personal_correto);</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT04_nome_funcionario_correto);</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT05_limite_maximo_funcionarios);</div>
+<div class="line"><span class="lineno">  142</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT06_nome_funcionario_vazio_invalido);</div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT07_nome_funcionario_valido);</div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT08_dois_funcionarios_cargos_distintos);</div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT09_cadastro_incrementa_total);</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_define" href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a>(GT10_reset_limpa_funcionarios);</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+<div class="ttc" id="aminunit_8h_html_acef7e3a7858368882ef2b560be0d10bb"><div class="ttname"><a href="minunit_8h.html#acef7e3a7858368882ef2b560be0d10bb">MU_RUN_TEST</a></div><div class="ttdeci">#define MU_RUN_TEST(test)</div><div class="ttdef"><b>Definição</b> minunit.h:112</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abd1232a4e9f1fb1b1856049eefe7bc7a" name="abd1232a4e9f1fb1b1856049eefe7bc7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1232a4e9f1fb1b1856049eefe7bc7a">&#9670;&#160;</a></span>reset_gerente()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset_gerente </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                     {</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="gerente_8c.html#ab3909b3f23c4992324e45b5a7c0f83fb">totalFuncionarios</a> = 0;</div>
+<div class="line"><span class="lineno">   29</span>    memset(<a class="code hl_variable" href="gerente_8c.html#a4b216f6345e92f2a51e13ede844c00d1">funcionarios</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct_funcionario.html">Funcionario</a>) * <a class="code hl_define" href="gerente_8h.html#ae56b7e6ebd3278dc39f4c20c2e123c91">MAX_FUNCIONARIOS</a>);</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+<div class="ttc" id="astruct_funcionario_html"><div class="ttname"><a href="struct_funcionario.html">Funcionario</a></div><div class="ttdoc">Estrutura que representa um funcionario do sistema.</div><div class="ttdef"><b>Definição</b> gerente.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7237192891d8e6a8243a04a26f3deec8" name="a7237192891d8e6a8243a04a26f3deec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7237192891d8e6a8243a04a26f3deec8">&#9670;&#160;</a></span>stub_validarNomeFuncionario_invalido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarNomeFuncionario_invalido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula nome de funcionario invalido (vazio). </p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{ <span class="keywordflow">return</span> 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a08f1db914b3b9722e38d7ca5aa82dc2a" name="a08f1db914b3b9722e38d7ca5aa82dc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f1db914b3b9722e38d7ca5aa82dc2a">&#9670;&#160;</a></span>stub_validarNomeFuncionario_valido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stub_validarNomeFuncionario_valido </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nome</em></span>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stub: simula nome de funcionario sempre valido (nao vazio). </p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{ <span class="keywordflow">return</span> strlen(nome) &gt; 0; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variáveis</h2>
+<a id="ac320da4b3bca9b4068ba286b7cf63650" name="ac320da4b3bca9b4068ba286b7cf63650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac320da4b3bca9b4068ba286b7cf63650">&#9670;&#160;</a></span>funcionarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_funcionario.html">Funcionario</a> funcionarios[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3909b3f23c4992324e45b5a7c0f83fb" name="ab3909b3f23c4992324e45b5a7c0f83fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3909b3f23c4992324e45b5a7c0f83fb">&#9670;&#160;</a></span>totalFuncionarios</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int totalFuncionarios</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a href="dir_520eca1800aac1aa0d4ca86111d672d4.html">Nova pasta</a></li><li class="navelem"><a href="dir_d31dfc16b169c6649fc06b8feb9a8484.html">fithub</a></li><li class="navelem"><a href="dir_00853a88518263942b57d346077a82e4.html">fithub</a></li><li class="navelem"><a href="testes__gerente_8c.html">testes_gerente.c</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

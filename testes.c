@@ -2,9 +2,6 @@
  * @file testes.c
  * @brief Suite principal de testes do sistema FitHub Academia.
  * @details Roda todos os testes dos modulos recepcionista, personal e gerente.
- *
- * Compilar:
- *   gcc testes.c recepcionista.c personal.c gerente.c -o testes
  */
 
 #include <stdio.h>
